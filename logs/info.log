@@ -1,0 +1,8 @@
+2022-01-11 13:29:34,754 INFO     Started server process [7616]
+2022-01-11 13:29:34,755 INFO     Waiting for application startup.
+2022-01-11 13:29:34,757 INFO     Application startup complete.
+2022-01-11 13:30:40,822 INFO     Opened landing page
+2022-01-11 13:31:01,100 INFO     Shutting down
+2022-01-11 13:31:01,204 INFO     Waiting for application shutdown.
+2022-01-11 13:31:01,204 INFO     Application shutdown complete.
+2022-01-11 13:31:01,204 INFO     Finished server process [7616]
