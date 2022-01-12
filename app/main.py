@@ -6,7 +6,7 @@ from typing import Optional
 from fastapi import FastAPI
 from starlette.responses import FileResponse
 
-from app.util_files import get_weight_data
+from app.util_files import get_head_data, get_height_data, get_weight_data
 
 app = FastAPI()
 favicon_path = "favicon.ico"
@@ -34,8 +34,24 @@ def index_get():
 
 
 @app.get("/weight")
-def weight_plot():
+def weight_data_page():
     logging.info("Opened weight page")
     result = get_weight_data()
+    result = dict(result)
+    return result
+
+
+@app.get("/head")
+def height_data_page():
+    logging.info("Opened head circumference page")
+    result = get_head_data()
+    result = dict(result)
+    return result
+
+
+@app.get("/height")
+def weight_data_page():
+    logging.info("Opened height page")
+    result = get_height_data()
     result = dict(result)
     return result
