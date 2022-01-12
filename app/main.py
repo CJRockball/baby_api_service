@@ -37,12 +37,14 @@ def index_get():
 def weight_data_page():
     logging.info("Opened weight page")
     result = get_weight_data()
+    print(result)
     result = dict(result)
+    print(result)
     return result
 
 
 @app.get("/head")
-def height_data_page():
+def head_data_page():
     logging.info("Opened head circumference page")
     result = get_head_data()
     result = dict(result)
@@ -50,7 +52,7 @@ def height_data_page():
 
 
 @app.get("/height")
-def weight_data_page():
+def height_data_page():
     logging.info("Opened height page")
     result = get_height_data()
     result = dict(result)

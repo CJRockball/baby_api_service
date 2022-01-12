@@ -1,0 +1,557 @@
+2022-01-12 11:13:45,132 INFO     Started server process [17596]
+2022-01-12 11:13:45,132 INFO     Waiting for application startup.
+2022-01-12 11:13:45,139 INFO     Application startup complete.
+2022-01-12 11:13:53,314 INFO     Opened weight page
+2022-01-12 11:13:58,645 INFO     Opened head circumference page
+2022-01-12 11:13:58,673 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:13:58,715 INFO     Opened favicon
+2022-01-12 11:13:59,021 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 282, in __call__
+    stat_result = await anyio.to_thread.run_sync(os.stat, self.path)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 805, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 743, in run
+    result = func(*args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 285, in __call__
+    raise RuntimeError(f"File at path {self.path} does not exist.")
+RuntimeError: File at path favicon.ico does not exist.
+2022-01-12 11:15:16,850 INFO     Started server process [6820]
+2022-01-12 11:15:16,850 INFO     Waiting for application startup.
+2022-01-12 11:15:16,852 INFO     Application startup complete.
+2022-01-12 11:15:19,327 INFO     Started server process [21172]
+2022-01-12 11:15:19,328 INFO     Waiting for application startup.
+2022-01-12 11:15:19,329 INFO     Application startup complete.
+2022-01-12 11:15:22,189 INFO     Opened head circumference page
+2022-01-12 11:15:22,257 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:15:58,772 INFO     Started server process [10560]
+2022-01-12 11:15:58,772 INFO     Waiting for application startup.
+2022-01-12 11:15:58,773 INFO     Application startup complete.
+2022-01-12 11:17:06,919 INFO     Opened weight page
+2022-01-12 11:17:42,161 INFO     Started server process [16540]
+2022-01-12 11:17:42,161 INFO     Waiting for application startup.
+2022-01-12 11:17:42,161 INFO     Application startup complete.
+2022-01-12 11:17:47,912 INFO     Opened height page
+2022-01-12 11:17:47,968 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:18:34,361 INFO     Started server process [6700]
+2022-01-12 11:18:34,361 INFO     Waiting for application startup.
+2022-01-12 11:18:34,365 INFO     Application startup complete.
+2022-01-12 11:18:36,825 INFO     Started server process [18784]
+2022-01-12 11:18:36,826 INFO     Waiting for application startup.
+2022-01-12 11:18:36,826 INFO     Application startup complete.
+2022-01-12 11:18:39,580 INFO     Opened height page
+2022-01-12 11:18:39,638 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:19:21,761 INFO     Started server process [18300]
+2022-01-12 11:19:21,762 INFO     Waiting for application startup.
+2022-01-12 11:19:21,762 INFO     Application startup complete.
+2022-01-12 11:19:24,445 INFO     Started server process [16128]
+2022-01-12 11:19:24,445 INFO     Waiting for application startup.
+2022-01-12 11:19:24,449 INFO     Application startup complete.
+2022-01-12 11:19:34,083 INFO     Opened weight page
+2022-01-12 11:20:07,214 INFO     Started server process [15440]
+2022-01-12 11:20:07,214 INFO     Waiting for application startup.
+2022-01-12 11:20:07,216 INFO     Application startup complete.
+2022-01-12 11:20:14,310 INFO     Opened head circumference page
+2022-01-12 11:20:14,364 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:20:22,068 INFO     Started server process [21172]
+2022-01-12 11:20:22,068 INFO     Waiting for application startup.
+2022-01-12 11:20:22,071 INFO     Application startup complete.
+2022-01-12 11:20:24,836 INFO     Opened head circumference page
+2022-01-12 11:20:24,905 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:21:20,974 INFO     Started server process [18260]
+2022-01-12 11:21:20,974 INFO     Waiting for application startup.
+2022-01-12 11:21:20,978 INFO     Application startup complete.
+2022-01-12 11:21:21,964 INFO     Opened head circumference page
+2022-01-12 11:21:54,960 INFO     Started server process [21456]
+2022-01-12 11:21:54,960 INFO     Waiting for application startup.
+2022-01-12 11:21:54,964 INFO     Application startup complete.
+2022-01-12 11:22:00,802 INFO     Started server process [5284]
+2022-01-12 11:22:00,803 INFO     Waiting for application startup.
+2022-01-12 11:22:00,804 INFO     Application startup complete.
+2022-01-12 11:22:03,555 INFO     Opened head circumference page
+2022-01-12 11:22:03,618 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 11:22:12,030 INFO     Started server process [4420]
+2022-01-12 11:22:12,030 INFO     Waiting for application startup.
+2022-01-12 11:22:12,030 INFO     Application startup complete.
+2022-01-12 11:22:27,907 INFO     Opened head circumference page
+2022-01-12 11:25:36,915 INFO     Started server process [2988]
+2022-01-12 11:25:36,916 INFO     Waiting for application startup.
+2022-01-12 11:25:36,917 INFO     Application startup complete.
+2022-01-12 11:25:40,455 INFO     Opened head circumference page
+2022-01-12 11:25:53,369 INFO     Started server process [15912]
+2022-01-12 11:25:53,370 INFO     Waiting for application startup.
+2022-01-12 11:25:53,371 INFO     Application startup complete.
+2022-01-12 11:25:56,171 INFO     Opened head circumference page
+2022-01-12 11:26:07,975 INFO     Started server process [12952]
+2022-01-12 11:26:07,975 INFO     Waiting for application startup.
+2022-01-12 11:26:07,978 INFO     Application startup complete.
+2022-01-12 11:26:10,410 INFO     Opened head circumference page
+2022-01-12 11:26:32,745 INFO     Started server process [16972]
+2022-01-12 11:26:32,745 INFO     Waiting for application startup.
+2022-01-12 11:26:32,745 INFO     Application startup complete.
+2022-01-12 11:26:35,653 INFO     Opened head circumference page
+2022-01-12 11:27:01,942 INFO     Opened weight page
+2022-01-12 11:27:35,860 INFO     Opened head circumference page
+2022-01-12 11:28:59,524 INFO     Started server process [12956]
+2022-01-12 11:28:59,524 INFO     Waiting for application startup.
+2022-01-12 11:28:59,526 INFO     Application startup complete.
+2022-01-12 11:29:02,377 INFO     Opened head circumference page
+2022-01-12 11:29:24,480 INFO     Opened height page
+2022-01-12 14:40:51,489 INFO     Started server process [16084]
+2022-01-12 14:40:51,489 INFO     Waiting for application startup.
+2022-01-12 14:40:51,497 INFO     Application startup complete.
+2022-01-12 14:40:59,361 INFO     Opened height page
+2022-01-12 14:41:20,723 INFO     Started server process [21432]
+2022-01-12 14:41:20,723 INFO     Waiting for application startup.
+2022-01-12 14:41:20,723 INFO     Application startup complete.
+2022-01-12 14:41:20,850 INFO     Opened height page
+2022-01-12 14:41:49,219 INFO     Opened height page
+2022-01-12 14:41:49,253 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-12 14:43:53,212 INFO     Started server process [20740]
+2022-01-12 14:43:53,216 INFO     Waiting for application startup.
+2022-01-12 14:43:53,218 INFO     Application startup complete.
+2022-01-12 14:44:44,742 INFO     Started server process [19688]
+2022-01-12 14:44:44,743 INFO     Waiting for application startup.
+2022-01-12 14:44:44,744 INFO     Application startup complete.
+2022-01-12 14:44:54,706 INFO     Opened height page
+2022-01-12 14:45:07,449 INFO     Started server process [20404]
+2022-01-12 14:45:07,449 INFO     Waiting for application startup.
+2022-01-12 14:45:07,455 INFO     Application startup complete.
+2022-01-12 14:45:14,198 INFO     Opened head circumference page
+2022-01-12 14:45:35,146 INFO     Started server process [18292]
+2022-01-12 14:45:35,147 INFO     Waiting for application startup.
+2022-01-12 14:45:35,148 INFO     Application startup complete.
+2022-01-12 14:45:45,774 INFO     Shutting down
