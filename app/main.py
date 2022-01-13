@@ -6,13 +6,20 @@ from typing import Optional
 from fastapi import FastAPI
 from starlette.responses import FileResponse
 
-from app.util_files import get_head_data, get_height_data, get_weight_data
+from app.util_files import (
+    get_feeding_data,
+    get_head_data,
+    get_height_data,
+    get_weight_data,
+)
 
 app = FastAPI()
-favicon_path = "favicon.ico"
+
 
 PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent
 LOG_FILE = PROJECT_PATH / "logs/info.log"
+
+favicon_path = PROJECT_PATH / "data/favicon.png"
 
 logging.basicConfig(
     filename=LOG_FILE,
@@ -57,3 +64,13 @@ def height_data_page():
     result = get_height_data()
     result = dict(result)
     return result
+
+
+@app.get("/feeding")
+def feeding():
+    logging.info("Opened feeding page")
+    result = get_feeding_data()
+    print(result.to_json)
+    # result = dict(result)
+    return result.to_json
+

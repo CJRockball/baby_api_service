@@ -555,3 +555,472 @@ ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars(
 2022-01-12 14:45:35,147 INFO     Waiting for application startup.
 2022-01-12 14:45:35,148 INFO     Application startup complete.
 2022-01-12 14:45:45,774 INFO     Shutting down
+2022-01-12 14:48:01,780 INFO     Started server process [11568]
+2022-01-12 14:48:01,783 INFO     Waiting for application startup.
+2022-01-12 14:48:01,784 INFO     Application startup complete.
+2022-01-12 14:56:27,035 INFO     Opened height page
+2022-01-12 14:58:13,465 INFO     Opened head circumference page
+2022-01-12 15:06:49,623 INFO     Opened weight page
+2022-01-12 15:22:58,577 INFO     Opened weight page
+2022-01-12 15:23:55,905 INFO     Opened weight page
+2022-01-12 15:25:52,396 INFO     Opened head circumference page
+2022-01-12 15:28:56,971 INFO     Opened weight page
+2022-01-12 15:48:41,744 INFO     Opened height page
+2022-01-12 15:49:04,696 INFO     Opened height page
+2022-01-12 15:49:20,478 INFO     Opened height page
+2022-01-12 15:49:46,684 INFO     Opened height page
+2022-01-12 15:51:10,448 INFO     Opened height page
+2022-01-12 15:52:30,852 INFO     Opened weight page
+2022-01-12 15:52:44,987 INFO     Opened weight page
+2022-01-12 15:53:30,408 INFO     Opened weight page
+2022-01-12 15:54:21,624 INFO     Opened weight page
+2022-01-12 15:55:54,991 INFO     Opened weight page
+2022-01-12 15:56:26,468 INFO     Opened height page
+2022-01-12 15:59:05,380 INFO     Opened head circumference page
+2022-01-12 15:59:30,046 INFO     Opened head circumference page
+2022-01-12 16:01:49,704 INFO     Opened weight page
+2022-01-12 16:02:32,552 INFO     Opened weight page
+2022-01-12 16:09:05,059 INFO     Opened weight page
+2022-01-12 16:09:32,091 INFO     Opened weight page
+2022-01-12 16:13:14,185 INFO     Opened weight page
+2022-01-12 16:13:19,786 INFO     Opened weight page
+2022-01-12 16:16:59,546 INFO     Opened weight page
+2022-01-12 16:17:33,494 INFO     Opened weight page
+2022-01-12 16:26:38,789 INFO     Opened weight page
+2022-01-12 16:27:03,685 INFO     Opened weight page
+2022-01-12 16:40:44,855 INFO     Opened weight page
+2022-01-12 16:40:45,048 INFO     Opened height page
+2022-01-12 16:40:45,194 INFO     Opened head circumference page
+2022-01-12 16:46:10,281 INFO     Opened weight page
+2022-01-12 16:46:10,316 INFO     Opened height page
+2022-01-12 16:47:10,171 INFO     Opened weight page
+2022-01-12 16:47:10,206 INFO     Opened height page
+2022-01-12 16:47:37,778 INFO     Opened weight page
+2022-01-12 16:47:37,827 INFO     Opened height page
+2022-01-12 16:48:43,364 INFO     Opened weight page
+2022-01-12 16:48:43,397 INFO     Opened height page
+2022-01-12 16:48:53,731 INFO     Opened weight page
+2022-01-12 16:48:53,765 INFO     Opened height page
+2022-01-12 16:50:27,393 INFO     Opened weight page
+2022-01-12 16:50:27,438 INFO     Opened height page
+2022-01-12 16:51:38,985 INFO     Opened weight page
+2022-01-12 16:51:39,180 INFO     Opened height page
+2022-01-12 16:51:39,319 INFO     Opened head circumference page
+2022-01-12 16:53:27,730 INFO     Opened weight page
+2022-01-12 16:53:27,918 INFO     Opened height page
+2022-01-12 16:53:28,068 INFO     Opened head circumference page
+2022-01-12 16:56:05,110 INFO     Opened weight page
+2022-01-12 16:56:05,315 INFO     Opened height page
+2022-01-12 16:56:05,460 INFO     Opened head circumference page
+2022-01-12 16:56:18,198 INFO     Opened weight page
+2022-01-12 16:56:18,386 INFO     Opened height page
+2022-01-12 16:56:18,548 INFO     Opened head circumference page
+2022-01-13 15:55:05,666 INFO     Started server process [2588]
+2022-01-13 15:55:05,675 INFO     Waiting for application startup.
+2022-01-13 15:55:05,676 INFO     Application startup complete.
+2022-01-13 16:33:04,862 INFO     Started server process [7140]
+2022-01-13 16:33:04,869 INFO     Waiting for application startup.
+2022-01-13 16:33:04,869 INFO     Application startup complete.
+2022-01-13 16:33:48,575 INFO     Opened favicon
+2022-01-13 16:33:48,885 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 282, in __call__
+    stat_result = await anyio.to_thread.run_sync(os.stat, self.path)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 805, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 743, in run
+    result = func(*args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 285, in __call__
+    raise RuntimeError(f"File at path {self.path} does not exist.")
+RuntimeError: File at path favicon.ico does not exist.
+2022-01-13 16:34:20,245 INFO     Opened weight page
+2022-01-13 16:34:20,565 INFO     Opened height page
+2022-01-13 16:34:20,734 INFO     Opened head circumference page
+2022-01-13 16:56:21,051 INFO     Started server process [10692]
+2022-01-13 16:56:21,052 INFO     Waiting for application startup.
+2022-01-13 16:56:21,053 INFO     Application startup complete.
+2022-01-13 16:56:43,544 INFO     Started server process [4956]
+2022-01-13 16:56:43,545 INFO     Waiting for application startup.
+2022-01-13 16:56:43,546 INFO     Application startup complete.
+2022-01-13 16:56:47,907 INFO     Opened feeding page
+2022-01-13 16:56:47,930 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-13 16:56:48,003 INFO     Opened favicon
+2022-01-13 16:56:48,306 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 282, in __call__
+    stat_result = await anyio.to_thread.run_sync(os.stat, self.path)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 805, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 743, in run
+    result = func(*args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 285, in __call__
+    raise RuntimeError(f"File at path {self.path} does not exist.")
+RuntimeError: File at path favicon.ico does not exist.
+2022-01-13 16:58:25,737 INFO     Started server process [1312]
+2022-01-13 16:58:25,738 INFO     Waiting for application startup.
+2022-01-13 16:58:25,738 INFO     Application startup complete.
+2022-01-13 16:58:31,589 INFO     Opened feeding page
+2022-01-13 16:58:31,606 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-13 16:58:31,638 INFO     Opened favicon
+2022-01-13 16:58:31,946 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 282, in __call__
+    stat_result = await anyio.to_thread.run_sync(os.stat, self.path)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 805, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 743, in run
+    result = func(*args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\PatCa\\Documents\\PythonScripts\\baby_growth\\data_service\\data\\favicon.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 285, in __call__
+    raise RuntimeError(f"File at path {self.path} does not exist.")
+RuntimeError: File at path C:\Users\PatCa\Documents\PythonScripts\baby_growth\data_service\data\favicon.png does not exist.
+2022-01-13 16:58:54,869 INFO     Opened weight page
+2022-01-13 16:58:54,973 INFO     Opened favicon
+2022-01-13 16:58:54,977 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 282, in __call__
+    stat_result = await anyio.to_thread.run_sync(os.stat, self.path)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 805, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 743, in run
+    result = func(*args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\PatCa\\Documents\\PythonScripts\\baby_growth\\data_service\\data\\favicon.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 285, in __call__
+    raise RuntimeError(f"File at path {self.path} does not exist.")
+RuntimeError: File at path C:\Users\PatCa\Documents\PythonScripts\baby_growth\data_service\data\favicon.png does not exist.
+2022-01-13 16:59:54,028 INFO     Started server process [9532]
+2022-01-13 16:59:54,029 INFO     Waiting for application startup.
+2022-01-13 16:59:54,030 INFO     Application startup complete.
+2022-01-13 16:59:59,897 INFO     Started server process [8648]
+2022-01-13 16:59:59,898 INFO     Waiting for application startup.
+2022-01-13 16:59:59,899 INFO     Application startup complete.
+2022-01-13 17:00:08,742 INFO     Opened feeding page
+2022-01-13 17:00:08,808 INFO     Opened favicon
+2022-01-13 17:00:09,122 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 282, in __call__
+    stat_result = await anyio.to_thread.run_sync(os.stat, self.path)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 805, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\anyio\_backends\_asyncio.py", line 743, in run
+    result = func(*args)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\PatCa\\Documents\\PythonScripts\\baby_growth\\data_service\\data\\favicon.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 64, in app
+    await response(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\responses.py", line 285, in __call__
+    raise RuntimeError(f"File at path {self.path} does not exist.")
+RuntimeError: File at path C:\Users\PatCa\Documents\PythonScripts\baby_growth\data_service\data\favicon.png does not exist.
+2022-01-13 17:00:48,499 INFO     Opened feeding page
+2022-01-13 17:00:48,553 INFO     Opened favicon
+2022-01-13 17:01:08,229 INFO     Started server process [2768]
+2022-01-13 17:01:08,231 INFO     Waiting for application startup.
+2022-01-13 17:01:08,231 INFO     Application startup complete.
+2022-01-13 17:01:10,536 INFO     Opened feeding page
+2022-01-13 17:01:10,568 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.int64' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
+    return jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+2022-01-13 17:10:53,541 INFO     Started server process [2540]
+2022-01-13 17:10:53,541 INFO     Waiting for application startup.
+2022-01-13 17:10:53,541 INFO     Application startup complete.
+2022-01-13 17:12:05,331 INFO     Started server process [9172]
+2022-01-13 17:12:05,332 INFO     Waiting for application startup.
+2022-01-13 17:12:05,333 INFO     Application startup complete.
+2022-01-13 17:12:14,311 INFO     Opened feeding page
+2022-01-13 17:16:05,147 INFO     Started server process [1220]
+2022-01-13 17:16:05,148 INFO     Waiting for application startup.
+2022-01-13 17:16:05,149 INFO     Application startup complete.
+2022-01-13 17:16:09,532 INFO     Opened feeding page
+2022-01-13 17:17:40,896 INFO     Shutting down
+2022-01-13 17:18:19,255 INFO     Started server process [596]
+2022-01-13 17:18:19,255 INFO     Waiting for application startup.
+2022-01-13 17:18:19,259 INFO     Application startup complete.
+2022-01-13 17:18:24,032 INFO     Opened feeding page
+2022-01-13 17:18:49,053 INFO     Opened feeding page
