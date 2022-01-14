@@ -7,6 +7,7 @@ def get_weight_data():
     PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent
     DATA_FOLDER = PROJECT_PATH / "data"
     df = pd.read_excel(DATA_FOLDER / "weight_data.ods")
+    df = df.astype(str)
     return df
 
 
@@ -14,7 +15,7 @@ def get_head_data():
     PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent
     DATA_FOLDER = PROJECT_PATH / "data"
     df = pd.read_excel(DATA_FOLDER / "head_data.ods")
-    df["week"] = df.week.astype(float)
+    df = df.astype(str)
     return df
 
 
@@ -22,12 +23,11 @@ def get_height_data():
     PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent
     DATA_FOLDER = PROJECT_PATH / "data"
     df = pd.read_excel(DATA_FOLDER / "height_data.ods")
-    df["week"] = df.week.astype(float)
+    df = df.astype(str)
     return df
 
 
 def get_feeding_data():
-    # df = pd.read_csv("C:/Users/PatCa/Documents/PythonScripts/baby_data/feeding.csv")
     PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent
     DATA_FOLDER = PROJECT_PATH / "data"
     df = pd.read_excel(DATA_FOLDER / "feeding.ods")
@@ -40,6 +40,6 @@ def get_feeding_data():
     df2["total_vol"] = df2.bm_vol + df2.formula_vol
 
     da = df2.groupby(["date"], as_index=False).sum()
-
+    da = da.astype(str)
     return da
 

@@ -44,9 +44,7 @@ def index_get():
 def weight_data_page():
     logging.info("Opened weight page")
     result = get_weight_data()
-    print(result)
     result = dict(result)
-    print(result)
     return result
 
 
@@ -70,7 +68,6 @@ def height_data_page():
 def feeding():
     logging.info("Opened feeding page")
     result = get_feeding_data()
-    print(result.to_json)
-    # result = dict(result)
-    return result.to_json
+    result = dict(result)
+    return result
 
