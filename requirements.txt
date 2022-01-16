@@ -1,1 +1,6 @@
-FastAPI
+fastapi
+uvicorn
+asyncpg
+pandas
+pathlib
+odfpy
