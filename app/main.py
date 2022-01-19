@@ -2,8 +2,9 @@ import json
 import logging
 import pathlib
 from typing import Optional
+import pandas as pd
 
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter, HTTPException
 from starlette.responses import FileResponse
 
 from app.util_files import (
@@ -13,7 +14,7 @@ from app.util_files import (
     get_weight_data,
 )
 
-app = FastAPI()
+datas = APIRouter()
 
 
 PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent
@@ -28,46 +29,62 @@ logging.basicConfig(
 )
 
 
-@app.get("/favicon.ico", include_in_schema=False)
+@datas.get("/favicon.ico", include_in_schema=False)
 async def favicon():
     logging.info("Opened favicon")
     return FileResponse(favicon_path)
 
 
-@app.get("/")
-def index_get():
+@datas.get("/")
+async def index_get():
     logging.info("Opened landing page")
     return
 
 
-@app.get("/weight")
-def weight_data_page():
+@datas.get("/weight")
+async def weight_data_page():
     logging.info("Opened weight page")
     result = get_weight_data()
+    
+    if not isinstance(result, pd.DataFrame):
+        raise HTTPException(status_code=404, detail="Weight data not found")
+    
     result = dict(result)
     return result
 
 
-@app.get("/head")
-def head_data_page():
+@datas.get("/head")
+async def head_data_page():
     logging.info("Opened head circumference page")
     result = get_head_data()
+    
+    if not isinstance(result, pd.DataFrame):
+        raise HTTPException(status_code=404, detail="Head data not found")
+    
     result = dict(result)
     return result
 
 
-@app.get("/height")
-def height_data_page():
+@datas.get("/height")
+async def height_data_page():
     logging.info("Opened height page")
     result = get_height_data()
+    
+    if not isinstance(result, pd.DataFrame):
+        raise HTTPException(status_code=404, detail="Height data not found")
+    
     result = dict(result)
     return result
 
 
-@app.get("/feeding")
-def feeding():
+@datas.get("/feeding")
+async def feeding():
     logging.info("Opened feeding page")
     result = get_feeding_data()
+    
+    if not isinstance(result, pd.DataFrame):
+        raise HTTPException(status_code=404, detail="Feeding data not found")
+    
     result = dict(result)
     return result
 
