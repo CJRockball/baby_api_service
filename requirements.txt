@@ -1,6 +1,6 @@
-fastapi
-uvicorn
+fastapi==0.70.0
+uvicorn==0.15.0
 asyncpg
-pandas
+pandas==1.3.4
 pathlib
-odfpy
+odfpy==1.4.1

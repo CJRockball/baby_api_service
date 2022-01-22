@@ -419,3 +419,62 @@ ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars(
 2022-01-19 23:51:29,103 INFO     Waiting for application shutdown.
 2022-01-19 23:51:29,104 INFO     Application shutdown complete.
 2022-01-19 23:51:29,104 INFO     Finished server process [8]
+2022-01-20 01:18:11,467 INFO     Started server process [17]
+2022-01-20 01:18:11,468 INFO     Waiting for application startup.
+2022-01-20 01:18:11,469 INFO     Application startup complete.
+2022-01-20 01:18:21,535 INFO     Opened weight page
+2022-01-20 01:18:21,624 INFO     Opened height page
+2022-01-20 01:18:21,668 INFO     Opened head circumference page
+2022-01-20 01:18:21,712 INFO     Opened feeding page
+2022-01-20 01:18:23,215 INFO     Opened feeding page
+2022-01-20 01:18:51,400 INFO     Opened weight page
+2022-01-20 01:18:51,474 INFO     Opened height page
+2022-01-20 01:18:51,539 INFO     Opened head circumference page
+2022-01-20 01:18:51,611 INFO     Opened feeding page
+2022-01-20 01:18:53,436 INFO     Opened feeding page
+2022-01-20 01:19:03,796 INFO     Opened weight page
+2022-01-20 01:19:11,828 INFO     Opened weight page
+2022-01-20 01:19:11,896 INFO     Opened height page
+2022-01-20 01:19:11,958 INFO     Opened head circumference page
+2022-01-20 01:19:12,016 INFO     Opened feeding page
+2022-01-20 01:19:13,609 INFO     Opened feeding page
+2022-01-20 01:22:09,472 INFO     Opened height page
+2022-01-20 23:27:50,296 INFO     Shutting down
+2022-01-20 23:27:50,399 INFO     Waiting for application shutdown.
+2022-01-20 23:27:50,401 INFO     Application shutdown complete.
+2022-01-20 23:27:50,401 INFO     Finished server process [17]
+2022-01-21 15:42:52,594 INFO     Started server process [15236]
+2022-01-21 15:42:52,594 INFO     Waiting for application startup.
+2022-01-21 15:42:52,604 INFO     Application startup complete.
+2022-01-21 15:44:00,940 INFO     Opened weight page
+2022-01-21 15:44:01,069 INFO     Opened height page
+2022-01-21 15:44:01,116 INFO     Opened head circumference page
+2022-01-21 15:44:01,170 INFO     Opened feeding page
+2022-01-21 15:44:55,480 INFO     Opened weight page
+2022-01-21 15:44:55,538 INFO     Opened height page
+2022-01-21 15:44:55,650 INFO     Opened head circumference page
+2022-01-21 15:44:55,696 INFO     Opened feeding page
+2022-01-21 15:44:56,635 INFO     Opened feeding page
+2022-01-21 15:58:02,218 INFO     Opened weight page
+2022-01-21 15:58:02,280 INFO     Opened height page
+2022-01-21 15:58:02,318 INFO     Opened head circumference page
+2022-01-21 15:58:02,365 INFO     Opened feeding page
+2022-01-21 15:58:03,325 INFO     Opened feeding page
+2022-01-21 15:59:30,340 INFO     Opened weight page
+2022-01-21 15:59:30,390 INFO     Opened height page
+2022-01-21 15:59:30,472 INFO     Opened head circumference page
+2022-01-21 15:59:30,522 INFO     Opened feeding page
+2022-01-21 15:59:43,393 INFO     Opened weight page
+2022-01-21 15:59:43,451 INFO     Opened height page
+2022-01-21 15:59:43,517 INFO     Opened head circumference page
+2022-01-21 15:59:43,550 INFO     Opened feeding page
+2022-01-21 15:59:44,515 INFO     Opened feeding page
+2022-01-21 16:52:39,137 INFO     Opened weight page
+2022-01-21 16:52:39,220 INFO     Opened height page
+2022-01-21 16:52:39,268 INFO     Opened head circumference page
+2022-01-21 16:52:39,338 INFO     Opened feeding page
+2022-01-21 16:52:40,388 INFO     Opened feeding page
+2022-01-22 09:41:35,363 INFO     Shutting down
+2022-01-22 09:41:35,470 INFO     Waiting for application shutdown.
+2022-01-22 09:41:35,470 INFO     Application shutdown complete.
+2022-01-22 09:41:35,474 INFO     Finished server process [15236]

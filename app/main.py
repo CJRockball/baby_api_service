@@ -3,7 +3,7 @@ import logging
 import pathlib
 from typing import Optional
 import pandas as pd
-
+from pydantic import BaseModel
 from fastapi import FastAPI, APIRouter, HTTPException
 from starlette.responses import FileResponse
 
@@ -40,6 +40,11 @@ async def index_get():
     logging.info("Opened landing page")
     return
 
+
+# class WeightItem(BaseModel):
+#     date: datetime.date
+#     week: float
+#     weight: float
 
 @datas.get("/weight")
 async def weight_data_page():
