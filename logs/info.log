@@ -1,12 +1,220 @@
-2022-01-18 10:37:29,714 INFO     Started server process [14136]
-2022-01-18 10:37:29,714 INFO     Waiting for application startup.
-2022-01-18 10:37:29,716 INFO     Application startup complete.
-2022-01-18 10:37:40,765 INFO     Started server process [15584]
-2022-01-18 10:37:40,766 INFO     Waiting for application startup.
-2022-01-18 10:37:40,767 INFO     Application startup complete.
-2022-01-18 10:40:28,107 INFO     Opened weight page
-2022-01-18 10:41:08,195 INFO     Opened weight page
-2022-01-18 10:41:08,280 ERROR    Exception in ASGI application
+2022-01-23 20:12:50,570 INFO     Started server process [19596]
+2022-01-23 20:12:50,570 INFO     Waiting for application startup.
+2022-01-23 20:12:50,575 INFO     Application startup complete.
+2022-01-23 20:12:59,808 INFO     Opened weight page
+2022-01-23 20:12:59,913 INFO     Opened height page
+2022-01-23 20:12:59,950 INFO     Opened head circumference page
+2022-01-23 20:12:59,990 INFO     Opened feeding page
+2022-01-23 20:13:01,192 INFO     Opened feeding page
+2022-01-23 20:14:19,305 INFO     Started server process [13860]
+2022-01-23 20:14:19,305 INFO     Waiting for application startup.
+2022-01-23 20:14:19,308 INFO     Application startup complete.
+2022-01-23 20:16:02,533 INFO     Started server process [26472]
+2022-01-23 20:16:02,541 INFO     Waiting for application startup.
+2022-01-23 20:16:02,541 INFO     Application startup complete.
+2022-01-23 20:17:08,972 INFO     Opened weight page
+2022-01-23 20:17:09,032 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 3 validation errors for WeightItem
+response -> date
+  invalid type; expected date, string, bytes, int or float (type=type_error)
+response -> week
+  value is not a valid float (type=type_error.float)
+response -> weight
+  value is not a valid float (type=type_error.float)
+2022-01-23 20:18:39,500 INFO     Started server process [28188]
+2022-01-23 20:18:39,500 INFO     Waiting for application startup.
+2022-01-23 20:18:39,505 INFO     Application startup complete.
+2022-01-23 20:18:44,056 INFO     Opened weight page
+2022-01-23 20:18:44,110 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 3 validation errors for WeightItem
+response -> date
+  invalid type; expected date, string, bytes, int or float (type=type_error)
+response -> week
+  value is not a valid float (type=type_error.float)
+response -> weight
+  value is not a valid float (type=type_error.float)
+2022-01-23 20:19:46,189 INFO     Started server process [5956]
+2022-01-23 20:19:46,189 INFO     Waiting for application startup.
+2022-01-23 20:19:46,197 INFO     Application startup complete.
+2022-01-23 20:19:51,333 INFO     Opened weight page
+2022-01-23 20:19:51,400 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 3 validation errors for WeightItem
+response -> date
+  invalid type; expected date, string, bytes, int or float (type=type_error)
+response -> week
+  value is not a valid float (type=type_error.float)
+response -> weight
+  value is not a valid float (type=type_error.float)
+2022-01-23 20:20:24,257 INFO     Started server process [27584]
+2022-01-23 20:20:24,257 INFO     Waiting for application startup.
+2022-01-23 20:20:24,262 INFO     Application startup complete.
+2022-01-23 20:20:27,434 INFO     Opened weight page
+2022-01-23 20:20:27,498 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 3 validation errors for WeightItem
+response -> date
+  invalid type; expected date, string, bytes, int or float (type=type_error)
+response -> week
+  value is not a valid float (type=type_error.float)
+response -> weight
+  value is not a valid float (type=type_error.float)
+2022-01-23 20:20:44,242 INFO     Started server process [22904]
+2022-01-23 20:20:44,248 INFO     Waiting for application startup.
+2022-01-23 20:20:44,248 INFO     Application startup complete.
+2022-01-23 20:21:07,253 INFO     Started server process [27004]
+2022-01-23 20:21:07,253 INFO     Waiting for application startup.
+2022-01-23 20:21:07,261 INFO     Application startup complete.
+2022-01-23 20:21:10,320 INFO     Started server process [15016]
+2022-01-23 20:21:10,320 INFO     Waiting for application startup.
+2022-01-23 20:21:10,334 INFO     Application startup complete.
+2022-01-23 20:21:15,555 INFO     Opened weight page
+2022-01-23 20:21:15,621 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 3 validation errors for WeightItem
+response -> date
+  invalid type; expected date, string, bytes, int or float (type=type_error)
+response -> week
+  value is not a valid float (type=type_error.float)
+response -> weight
+  value is not a valid float (type=type_error.float)
+2022-01-23 20:21:51,556 INFO     Started server process [25604]
+2022-01-23 20:21:51,571 INFO     Waiting for application startup.
+2022-01-23 20:21:51,572 INFO     Application startup complete.
+2022-01-23 20:21:54,626 INFO     Opened weight page
+2022-01-23 20:21:54,682 ERROR    Exception in ASGI application
 Traceback (most recent call last):
   File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
     result = await app(self.scope, self.receive, self.send)
@@ -34,56 +242,46 @@ Traceback (most recent call last):
     raw_response = await run_endpoint_function(
   File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
     return await dependant.call(**values)
-  File ".\app\main.py", line 47, in weight_data_page
-    if result == "":
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\generic.py", line 1537, in __nonzero__
-    raise ValueError(
-ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-2022-01-18 10:45:09,654 INFO     Started server process [9784]
-2022-01-18 10:45:09,654 INFO     Waiting for application startup.
-2022-01-18 10:45:09,659 INFO     Application startup complete.
-2022-01-18 10:45:22,933 INFO     Started server process [18580]
-2022-01-18 10:45:22,941 INFO     Waiting for application startup.
-2022-01-18 10:45:22,941 INFO     Application startup complete.
-2022-01-18 10:45:34,295 INFO     Started server process [10940]
-2022-01-18 10:45:34,295 INFO     Waiting for application startup.
-2022-01-18 10:45:34,303 INFO     Application startup complete.
-2022-01-18 10:45:44,502 INFO     Opened weight page
-2022-01-18 10:45:57,736 INFO     Opened weight page
-2022-01-18 10:46:38,816 INFO     Started server process [2088]
-2022-01-18 10:46:38,816 INFO     Waiting for application startup.
-2022-01-18 10:46:38,821 INFO     Application startup complete.
-2022-01-18 10:47:30,167 INFO     Started server process [13360]
-2022-01-18 10:47:30,168 INFO     Waiting for application startup.
-2022-01-18 10:47:30,169 INFO     Application startup complete.
-2022-01-18 10:48:54,042 INFO     Started server process [12900]
-2022-01-18 10:48:54,050 INFO     Waiting for application startup.
-2022-01-18 10:48:54,050 INFO     Application startup complete.
-2022-01-18 10:49:36,687 INFO     Started server process [25460]
-2022-01-18 10:49:36,688 INFO     Waiting for application startup.
-2022-01-18 10:49:36,689 INFO     Application startup complete.
-2022-01-18 10:50:33,186 INFO     Started server process [24432]
-2022-01-18 10:50:33,186 INFO     Waiting for application startup.
-2022-01-18 10:50:33,190 INFO     Application startup complete.
-2022-01-18 10:52:51,317 INFO     Started server process [14924]
-2022-01-18 10:52:51,318 INFO     Waiting for application startup.
-2022-01-18 10:52:51,319 INFO     Application startup complete.
-2022-01-18 10:53:14,933 INFO     Opened feeding page
-2022-01-18 10:53:15,179 ERROR    Exception in ASGI application
+  File ".\app\main.py", line 58, in weight_data_page
+    print(result.dtypes)
+AttributeError: 'function' object has no attribute 'dtypes'
+2022-01-23 20:21:56,532 INFO     Opened weight page
+2022-01-23 20:21:56,563 ERROR    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
-    data = dict(obj)
-TypeError: 'numpy.int64' object is not iterable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
-    data = vars(obj)
-TypeError: vars() argument must have __dict__ attribute
-
-During handling of the above exception, another exception occurred:
-
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 58, in weight_data_page
+    print(result.dtypes)
+AttributeError: 'function' object has no attribute 'dtypes'
+2022-01-23 20:22:09,028 INFO     Started server process [29508]
+2022-01-23 20:22:09,029 INFO     Waiting for application startup.
+2022-01-23 20:22:09,030 INFO     Application startup complete.
+2022-01-23 20:22:15,285 INFO     Opened weight page
+2022-01-23 20:22:15,373 ERROR    Exception in ASGI application
 Traceback (most recent call last):
   File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
     result = await app(self.scope, self.receive, self.send)
@@ -109,34 +307,16 @@ Traceback (most recent call last):
     response = await func(request)
   File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
     response_data = await serialize_response(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
-    return jsonable_encoder(response_content)
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
-    encoded_value = jsonable_encoder(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
-    return jsonable_encoder(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
-    encoded_value = jsonable_encoder(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
-    raise ValueError(errors)
-ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-2022-01-18 10:54:29,855 INFO     Opened height page
-2022-01-18 10:54:36,531 INFO     Opened feeding page
-2022-01-18 10:54:36,731 ERROR    Exception in ASGI application
-Traceback (most recent call last):
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
-    data = dict(obj)
-TypeError: 'numpy.int64' object is not iterable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
-    data = vars(obj)
-TypeError: vars() argument must have __dict__ attribute
-
-During handling of the above exception, another exception occurred:
-
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for WeightItem
+response
+  value is not a valid dict (type=type_error.dict)
+2022-01-23 20:26:05,730 INFO     Started server process [24884]
+2022-01-23 20:26:05,731 INFO     Waiting for application startup.
+2022-01-23 20:26:05,732 INFO     Application startup complete.
+2022-01-23 20:26:13,617 INFO     Opened weight page
+2022-01-23 20:26:13,689 ERROR    Exception in ASGI application
 Traceback (most recent call last):
   File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
     result = await app(self.scope, self.receive, self.send)
@@ -162,319 +342,862 @@ Traceback (most recent call last):
     response = await func(request)
   File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
     response_data = await serialize_response(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 148, in serialize_response
-    return jsonable_encoder(response_content)
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
-    encoded_value = jsonable_encoder(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 145, in jsonable_encoder
-    return jsonable_encoder(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 93, in jsonable_encoder
-    encoded_value = jsonable_encoder(
-  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
-    raise ValueError(errors)
-ValueError: [TypeError("'numpy.int64' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-2022-01-18 10:58:43,793 INFO     Started server process [24776]
-2022-01-18 10:58:43,793 INFO     Waiting for application startup.
-2022-01-18 10:58:43,800 INFO     Application startup complete.
-2022-01-18 10:58:51,560 INFO     Opened feeding page
-2022-01-18 11:06:56,616 INFO     Started server process [16464]
-2022-01-18 11:06:56,616 INFO     Waiting for application startup.
-2022-01-18 11:06:56,618 INFO     Application startup complete.
-2022-01-18 11:07:31,271 INFO     Started server process [12744]
-2022-01-18 11:07:31,271 INFO     Waiting for application startup.
-2022-01-18 11:07:31,274 INFO     Application startup complete.
-2022-01-18 11:07:39,803 INFO     Started server process [24824]
-2022-01-18 11:07:39,803 INFO     Waiting for application startup.
-2022-01-18 11:07:39,804 INFO     Application startup complete.
-2022-01-18 11:07:47,536 INFO     Opened feeding page
-2022-01-18 11:07:52,608 INFO     Opened head circumference page
-2022-01-18 11:07:57,023 INFO     Opened height page
-2022-01-18 11:10:57,837 INFO     Opened weight page
-2022-01-18 11:10:58,035 INFO     Opened height page
-2022-01-18 11:10:58,190 INFO     Opened head circumference page
-2022-01-18 11:10:58,469 INFO     Opened feeding page
-2022-01-18 11:11:47,384 INFO     Opened weight page
-2022-01-18 11:22:20,189 INFO     Opened weight page
-2022-01-18 11:23:40,246 INFO     Opened weight page
-2022-01-18 11:23:59,381 INFO     Opened weight page
-2022-01-18 11:24:27,445 INFO     Opened weight page
-2022-01-18 11:28:02,019 INFO     Opened weight page
-2022-01-18 11:28:27,952 INFO     Opened weight page
-2022-01-18 11:35:38,246 INFO     Opened weight page
-2022-01-18 11:36:03,008 INFO     Opened weight page
-2022-01-18 11:36:37,523 INFO     Opened weight page
-2022-01-18 11:36:55,949 INFO     Opened weight page
-2022-01-18 11:37:10,754 INFO     Opened weight page
-2022-01-18 14:18:48,501 INFO     Opened weight page
-2022-01-18 14:19:10,554 INFO     Opened weight page
-2022-01-18 14:31:02,711 INFO     Opened weight page
-2022-01-18 14:31:55,524 INFO     Opened weight page
-2022-01-18 14:32:52,382 INFO     Opened weight page
-2022-01-18 14:34:17,422 INFO     Opened weight page
-2022-01-18 16:14:38,643 INFO     Opened weight page
-2022-01-18 16:14:51,407 INFO     Opened weight page
-2022-01-18 16:14:57,967 INFO     Opened head circumference page
-2022-01-18 16:15:30,622 INFO     Opened head circumference page
-2022-01-18 16:15:37,545 INFO     Opened height page
-2022-01-18 16:15:42,729 INFO     Opened feeding page
-2022-01-18 16:15:42,940 INFO     Opened weight page
-2022-01-18 16:15:42,984 INFO     Opened weight page
-2022-01-18 16:17:05,075 INFO     Opened feeding page
-2022-01-18 16:17:05,291 INFO     Opened weight page
-2022-01-18 16:17:05,361 INFO     Opened weight page
-2022-01-18 22:02:44,660 INFO     Opened feeding page
-2022-01-18 22:02:45,002 INFO     Opened weight page
-2022-01-18 22:02:45,044 INFO     Opened weight page
-2022-01-18 22:02:53,468 INFO     Opened weight page
-2022-01-18 22:02:58,253 INFO     Opened weight page
-2022-01-18 22:02:58,290 INFO     Opened height page
-2022-01-18 22:02:58,324 INFO     Opened head circumference page
-2022-01-18 22:02:58,357 INFO     Opened feeding page
-2022-01-18 22:04:00,804 INFO     Opened weight page
-2022-01-18 22:04:00,858 INFO     Opened height page
-2022-01-18 22:04:00,892 INFO     Opened head circumference page
-2022-01-18 22:04:00,925 INFO     Opened feeding page
-2022-01-18 22:04:01,850 INFO     Opened feeding page
-2022-01-18 22:45:40,506 INFO     Opened weight page
-2022-01-18 22:48:26,012 INFO     Opened weight page
-2022-01-18 22:51:35,427 INFO     Shutting down
-2022-01-18 22:51:35,536 INFO     Waiting for application shutdown.
-2022-01-18 22:51:35,536 INFO     Application shutdown complete.
-2022-01-18 22:51:35,538 INFO     Finished server process [24824]
-2022-01-18 14:51:49,807 INFO     Started server process [9]
-2022-01-18 14:51:49,808 INFO     Waiting for application startup.
-2022-01-18 14:51:49,809 INFO     Application startup complete.
-2022-01-18 14:52:35,988 INFO     Opened weight page
-2022-01-18 15:09:38,473 INFO     Opened weight page
-2022-01-18 15:09:38,543 INFO     Opened height page
-2022-01-18 15:09:38,606 INFO     Opened head circumference page
-2022-01-18 15:09:38,666 INFO     Opened feeding page
-2022-01-18 15:09:40,140 INFO     Opened feeding page
-2022-01-18 15:15:19,726 INFO     Opened weight page
-2022-01-18 15:15:19,785 INFO     Opened height page
-2022-01-18 15:15:19,844 INFO     Opened head circumference page
-2022-01-18 15:15:19,903 INFO     Opened feeding page
-2022-01-18 15:15:21,389 INFO     Opened feeding page
-2022-01-18 15:22:24,756 INFO     Opened weight page
-2022-01-18 15:22:24,818 INFO     Opened height page
-2022-01-18 15:22:24,877 INFO     Opened head circumference page
-2022-01-18 15:22:24,934 INFO     Opened feeding page
-2022-01-18 15:22:26,411 INFO     Opened feeding page
-2022-01-18 15:56:16,636 INFO     Opened weight page
-2022-01-18 15:56:16,691 INFO     Opened height page
-2022-01-18 15:56:16,744 INFO     Opened head circumference page
-2022-01-18 15:56:16,800 INFO     Opened feeding page
-2022-01-18 15:56:18,306 INFO     Opened feeding page
-2022-01-18 16:04:17,483 INFO     Opened weight page
-2022-01-18 16:04:17,553 INFO     Opened height page
-2022-01-18 16:04:17,613 INFO     Opened head circumference page
-2022-01-18 16:04:17,675 INFO     Opened feeding page
-2022-01-18 16:04:19,182 INFO     Opened feeding page
-2022-01-18 16:05:42,637 INFO     Shutting down
-2022-01-18 16:05:42,739 INFO     Waiting for application shutdown.
-2022-01-18 16:05:42,740 INFO     Application shutdown complete.
-2022-01-18 16:05:42,741 INFO     Finished server process [9]
-2022-01-19 00:07:20,022 INFO     Started server process [13392]
-2022-01-19 00:07:20,023 INFO     Waiting for application startup.
-2022-01-19 00:07:20,024 INFO     Application startup complete.
-2022-01-19 00:12:18,430 INFO     Opened weight page
-2022-01-19 00:12:18,499 INFO     Opened height page
-2022-01-19 00:12:18,532 INFO     Opened head circumference page
-2022-01-19 00:12:18,565 INFO     Opened feeding page
-2022-01-19 00:12:19,473 INFO     Opened feeding page
-2022-01-19 00:13:25,193 INFO     Opened weight page
-2022-01-19 00:13:25,229 INFO     Opened height page
-2022-01-19 00:13:25,279 INFO     Opened head circumference page
-2022-01-19 00:13:25,321 INFO     Opened feeding page
-2022-01-19 00:13:26,216 INFO     Opened feeding page
-2022-01-19 00:22:25,593 INFO     Opened weight page
-2022-01-19 00:22:25,637 INFO     Opened height page
-2022-01-19 00:22:25,668 INFO     Opened head circumference page
-2022-01-19 00:22:25,705 INFO     Opened feeding page
-2022-01-19 00:22:26,625 INFO     Opened feeding page
-2022-01-19 08:44:50,722 INFO     Opened weight page
-2022-01-19 08:44:50,763 INFO     Opened height page
-2022-01-19 08:44:50,796 INFO     Opened head circumference page
-2022-01-19 08:44:50,815 INFO     Opened feeding page
-2022-01-19 08:44:51,730 INFO     Opened feeding page
-2022-01-19 08:46:09,555 INFO     Opened weight page
-2022-01-19 08:46:09,591 INFO     Opened height page
-2022-01-19 08:46:09,624 INFO     Opened head circumference page
-2022-01-19 08:46:09,659 INFO     Opened feeding page
-2022-01-19 08:46:10,568 INFO     Opened feeding page
-2022-01-19 08:46:48,423 INFO     Opened weight page
-2022-01-19 08:46:48,445 INFO     Opened height page
-2022-01-19 08:46:48,497 INFO     Opened head circumference page
-2022-01-19 08:46:48,579 INFO     Opened feeding page
-2022-01-19 08:46:49,487 INFO     Opened feeding page
-2022-01-19 10:12:59,061 INFO     Opened weight page
-2022-01-19 10:12:59,145 INFO     Opened height page
-2022-01-19 10:12:59,183 INFO     Opened head circumference page
-2022-01-19 10:12:59,217 INFO     Opened feeding page
-2022-01-19 10:13:00,140 INFO     Opened feeding page
-2022-01-19 10:14:25,656 INFO     Opened weight page
-2022-01-19 10:14:37,445 INFO     Opened weight page
-2022-01-19 10:14:37,483 INFO     Opened height page
-2022-01-19 10:14:37,514 INFO     Opened head circumference page
-2022-01-19 10:14:37,548 INFO     Opened feeding page
-2022-01-19 10:14:38,476 INFO     Opened feeding page
-2022-01-19 10:15:28,911 INFO     Opened weight page
-2022-01-19 10:15:28,959 INFO     Opened height page
-2022-01-19 10:15:28,993 INFO     Opened head circumference page
-2022-01-19 10:15:29,025 INFO     Opened feeding page
-2022-01-19 10:15:29,948 INFO     Opened feeding page
-2022-01-19 10:20:05,131 INFO     Opened weight page
-2022-01-19 10:20:05,173 INFO     Opened height page
-2022-01-19 10:20:05,206 INFO     Opened head circumference page
-2022-01-19 10:20:05,239 INFO     Opened feeding page
-2022-01-19 10:20:06,183 INFO     Opened feeding page
-2022-01-19 10:22:27,855 INFO     Opened weight page
-2022-01-19 10:22:27,898 INFO     Opened height page
-2022-01-19 10:22:27,932 INFO     Opened head circumference page
-2022-01-19 10:22:27,964 INFO     Opened feeding page
-2022-01-19 10:22:28,847 INFO     Opened feeding page
-2022-01-19 10:23:56,439 INFO     Opened weight page
-2022-01-19 10:23:56,485 INFO     Opened height page
-2022-01-19 10:23:56,519 INFO     Opened head circumference page
-2022-01-19 10:23:56,552 INFO     Opened feeding page
-2022-01-19 10:23:57,457 INFO     Opened feeding page
-2022-01-19 10:27:38,987 INFO     Opened weight page
-2022-01-19 10:27:39,026 INFO     Opened height page
-2022-01-19 10:27:39,064 INFO     Opened head circumference page
-2022-01-19 10:27:39,097 INFO     Opened feeding page
-2022-01-19 10:27:40,031 INFO     Opened feeding page
-2022-01-19 10:37:44,807 INFO     Opened weight page
-2022-01-19 10:37:44,847 INFO     Opened height page
-2022-01-19 10:37:44,906 INFO     Opened head circumference page
-2022-01-19 10:37:44,939 INFO     Opened feeding page
-2022-01-19 10:37:45,839 INFO     Opened feeding page
-2022-01-19 10:54:15,151 INFO     Opened weight page
-2022-01-19 10:54:15,198 INFO     Opened height page
-2022-01-19 10:54:15,233 INFO     Opened head circumference page
-2022-01-19 10:54:15,268 INFO     Opened feeding page
-2022-01-19 10:54:16,240 INFO     Opened feeding page
-2022-01-19 10:58:45,998 INFO     Opened weight page
-2022-01-19 10:58:46,036 INFO     Opened height page
-2022-01-19 10:58:46,070 INFO     Opened head circumference page
-2022-01-19 10:58:46,104 INFO     Opened feeding page
-2022-01-19 10:58:47,062 INFO     Opened feeding page
-2022-01-19 11:00:48,138 INFO     Opened weight page
-2022-01-19 11:00:48,237 INFO     Opened height page
-2022-01-19 11:00:48,285 INFO     Opened head circumference page
-2022-01-19 11:00:48,337 INFO     Opened feeding page
-2022-01-19 11:00:49,299 INFO     Opened feeding page
-2022-01-19 11:01:05,434 INFO     Shutting down
-2022-01-19 03:01:20,758 INFO     Started server process [9]
-2022-01-19 03:01:20,759 INFO     Waiting for application startup.
-2022-01-19 03:01:20,760 INFO     Application startup complete.
-2022-01-19 03:04:21,357 INFO     Opened weight page
-2022-01-19 03:04:21,478 INFO     Opened height page
-2022-01-19 03:04:21,540 INFO     Opened head circumference page
-2022-01-19 03:04:21,597 INFO     Opened feeding page
-2022-01-19 03:04:23,064 INFO     Opened feeding page
-2022-01-19 03:05:14,382 INFO     Opened weight page
-2022-01-19 03:05:14,437 INFO     Opened height page
-2022-01-19 03:05:14,500 INFO     Opened head circumference page
-2022-01-19 03:05:14,555 INFO     Opened feeding page
-2022-01-19 03:05:16,085 INFO     Opened feeding page
-2022-01-19 03:06:43,275 INFO     Opened weight page
-2022-01-19 03:06:43,332 INFO     Opened height page
-2022-01-19 03:06:43,400 INFO     Opened head circumference page
-2022-01-19 03:06:43,470 INFO     Opened feeding page
-2022-01-19 03:06:44,951 INFO     Opened feeding page
-2022-01-19 03:08:59,293 INFO     Opened weight page
-2022-01-19 03:08:59,415 INFO     Opened height page
-2022-01-19 03:08:59,472 INFO     Opened head circumference page
-2022-01-19 03:08:59,529 INFO     Opened feeding page
-2022-01-19 03:09:00,990 INFO     Opened feeding page
-2022-01-19 03:09:53,849 INFO     Opened weight page
-2022-01-19 03:09:53,918 INFO     Opened height page
-2022-01-19 03:09:53,974 INFO     Opened head circumference page
-2022-01-19 03:09:54,032 INFO     Opened feeding page
-2022-01-19 03:09:55,729 INFO     Opened feeding page
-2022-01-19 03:11:00,683 INFO     Opened weight page
-2022-01-19 03:11:00,750 INFO     Opened height page
-2022-01-19 03:11:00,810 INFO     Opened head circumference page
-2022-01-19 03:11:00,872 INFO     Opened feeding page
-2022-01-19 03:11:02,467 INFO     Opened feeding page
-2022-01-19 03:11:47,802 INFO     Shutting down
-2022-01-19 03:11:47,903 INFO     Waiting for application shutdown.
-2022-01-19 03:11:47,904 INFO     Application shutdown complete.
-2022-01-19 03:11:47,904 INFO     Finished server process [9]
-2022-01-19 03:12:41,370 INFO     Started server process [8]
-2022-01-19 03:12:41,371 INFO     Waiting for application startup.
-2022-01-19 03:12:41,372 INFO     Application startup complete.
-2022-01-19 03:13:29,274 INFO     Opened weight page
-2022-01-19 03:13:37,016 INFO     Opened weight page
-2022-01-19 03:13:37,083 INFO     Opened height page
-2022-01-19 03:13:37,145 INFO     Opened head circumference page
-2022-01-19 03:13:37,200 INFO     Opened feeding page
-2022-01-19 03:13:38,698 INFO     Opened feeding page
-2022-01-19 05:56:54,395 INFO     Opened weight page
-2022-01-19 05:56:54,449 INFO     Opened height page
-2022-01-19 05:56:54,514 INFO     Opened head circumference page
-2022-01-19 05:56:54,563 INFO     Opened feeding page
-2022-01-19 05:56:56,078 INFO     Opened feeding page
-2022-01-19 23:51:29,001 INFO     Shutting down
-2022-01-19 23:51:29,103 INFO     Waiting for application shutdown.
-2022-01-19 23:51:29,104 INFO     Application shutdown complete.
-2022-01-19 23:51:29,104 INFO     Finished server process [8]
-2022-01-20 01:18:11,467 INFO     Started server process [17]
-2022-01-20 01:18:11,468 INFO     Waiting for application startup.
-2022-01-20 01:18:11,469 INFO     Application startup complete.
-2022-01-20 01:18:21,535 INFO     Opened weight page
-2022-01-20 01:18:21,624 INFO     Opened height page
-2022-01-20 01:18:21,668 INFO     Opened head circumference page
-2022-01-20 01:18:21,712 INFO     Opened feeding page
-2022-01-20 01:18:23,215 INFO     Opened feeding page
-2022-01-20 01:18:51,400 INFO     Opened weight page
-2022-01-20 01:18:51,474 INFO     Opened height page
-2022-01-20 01:18:51,539 INFO     Opened head circumference page
-2022-01-20 01:18:51,611 INFO     Opened feeding page
-2022-01-20 01:18:53,436 INFO     Opened feeding page
-2022-01-20 01:19:03,796 INFO     Opened weight page
-2022-01-20 01:19:11,828 INFO     Opened weight page
-2022-01-20 01:19:11,896 INFO     Opened height page
-2022-01-20 01:19:11,958 INFO     Opened head circumference page
-2022-01-20 01:19:12,016 INFO     Opened feeding page
-2022-01-20 01:19:13,609 INFO     Opened feeding page
-2022-01-20 01:22:09,472 INFO     Opened height page
-2022-01-20 23:27:50,296 INFO     Shutting down
-2022-01-20 23:27:50,399 INFO     Waiting for application shutdown.
-2022-01-20 23:27:50,401 INFO     Application shutdown complete.
-2022-01-20 23:27:50,401 INFO     Finished server process [17]
-2022-01-21 15:42:52,594 INFO     Started server process [15236]
-2022-01-21 15:42:52,594 INFO     Waiting for application startup.
-2022-01-21 15:42:52,604 INFO     Application startup complete.
-2022-01-21 15:44:00,940 INFO     Opened weight page
-2022-01-21 15:44:01,069 INFO     Opened height page
-2022-01-21 15:44:01,116 INFO     Opened head circumference page
-2022-01-21 15:44:01,170 INFO     Opened feeding page
-2022-01-21 15:44:55,480 INFO     Opened weight page
-2022-01-21 15:44:55,538 INFO     Opened height page
-2022-01-21 15:44:55,650 INFO     Opened head circumference page
-2022-01-21 15:44:55,696 INFO     Opened feeding page
-2022-01-21 15:44:56,635 INFO     Opened feeding page
-2022-01-21 15:58:02,218 INFO     Opened weight page
-2022-01-21 15:58:02,280 INFO     Opened height page
-2022-01-21 15:58:02,318 INFO     Opened head circumference page
-2022-01-21 15:58:02,365 INFO     Opened feeding page
-2022-01-21 15:58:03,325 INFO     Opened feeding page
-2022-01-21 15:59:30,340 INFO     Opened weight page
-2022-01-21 15:59:30,390 INFO     Opened height page
-2022-01-21 15:59:30,472 INFO     Opened head circumference page
-2022-01-21 15:59:30,522 INFO     Opened feeding page
-2022-01-21 15:59:43,393 INFO     Opened weight page
-2022-01-21 15:59:43,451 INFO     Opened height page
-2022-01-21 15:59:43,517 INFO     Opened head circumference page
-2022-01-21 15:59:43,550 INFO     Opened feeding page
-2022-01-21 15:59:44,515 INFO     Opened feeding page
-2022-01-21 16:52:39,137 INFO     Opened weight page
-2022-01-21 16:52:39,220 INFO     Opened height page
-2022-01-21 16:52:39,268 INFO     Opened head circumference page
-2022-01-21 16:52:39,338 INFO     Opened feeding page
-2022-01-21 16:52:40,388 INFO     Opened feeding page
-2022-01-22 09:41:35,363 INFO     Shutting down
-2022-01-22 09:41:35,470 INFO     Waiting for application shutdown.
-2022-01-22 09:41:35,470 INFO     Application shutdown complete.
-2022-01-22 09:41:35,474 INFO     Finished server process [15236]
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 1 validation error for WeightItem
+response
+  value is not a valid dict (type=type_error.dict)
+2022-01-23 20:26:31,378 INFO     Started server process [7992]
+2022-01-23 20:26:31,378 INFO     Waiting for application startup.
+2022-01-23 20:26:31,383 INFO     Application startup complete.
+2022-01-23 20:26:34,584 INFO     Opened weight page
+2022-01-23 20:26:34,649 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 234, in app
+    response_data = await serialize_response(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 137, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 3 validation errors for WeightItem
+response -> date
+  value is not a valid list (type=type_error.list)
+response -> week
+  value is not a valid list (type=type_error.list)
+response -> weight
+  value is not a valid list (type=type_error.list)
+2022-01-23 20:27:23,420 INFO     Started server process [25900]
+2022-01-23 20:27:23,420 INFO     Waiting for application startup.
+2022-01-23 20:27:23,429 INFO     Application startup complete.
+2022-01-23 20:27:31,324 INFO     Started server process [14920]
+2022-01-23 20:27:31,324 INFO     Waiting for application startup.
+2022-01-23 20:27:31,329 INFO     Application startup complete.
+2022-01-23 20:27:40,076 INFO     Opened weight page
+2022-01-23 20:38:13,177 INFO     Opened weight page
+2022-01-23 20:38:21,490 INFO     Opened weight page
+2022-01-23 20:38:21,544 INFO     Opened height page
+2022-01-23 20:38:21,580 INFO     Opened head circumference page
+2022-01-23 20:38:21,618 INFO     Opened feeding page
+2022-01-23 20:38:22,777 INFO     Opened feeding page
+2022-01-23 21:00:09,466 INFO     Shutting down
+2022-01-24 12:40:40,763 INFO     Started server process [30044]
+2022-01-24 12:40:40,763 INFO     Waiting for application startup.
+2022-01-24 12:40:40,763 INFO     Application startup complete.
+2022-01-24 12:41:05,659 INFO     Opened weight page
+2022-01-24 12:41:32,021 INFO     Started server process [19312]
+2022-01-24 12:41:32,022 INFO     Waiting for application startup.
+2022-01-24 12:41:32,022 INFO     Application startup complete.
+2022-01-24 12:41:39,517 INFO     Started server process [3180]
+2022-01-24 12:41:39,518 INFO     Waiting for application startup.
+2022-01-24 12:41:39,519 INFO     Application startup complete.
+2022-01-24 12:41:46,431 INFO     Opened weight page
+2022-01-24 12:48:10,675 INFO     Started server process [8440]
+2022-01-24 12:48:10,676 INFO     Waiting for application startup.
+2022-01-24 12:48:10,677 INFO     Application startup complete.
+2022-01-24 12:48:47,388 INFO     Started server process [28824]
+2022-01-24 12:48:47,388 INFO     Waiting for application startup.
+2022-01-24 12:48:47,388 INFO     Application startup complete.
+2022-01-24 12:49:12,252 INFO     Started server process [23492]
+2022-01-24 12:49:12,253 INFO     Waiting for application startup.
+2022-01-24 12:49:12,254 INFO     Application startup complete.
+2022-01-24 12:50:12,099 INFO     Started server process [1948]
+2022-01-24 12:50:12,100 INFO     Waiting for application startup.
+2022-01-24 12:50:12,101 INFO     Application startup complete.
+2022-01-24 12:54:06,693 INFO     Started server process [19060]
+2022-01-24 12:54:06,694 INFO     Waiting for application startup.
+2022-01-24 12:54:06,694 INFO     Application startup complete.
+2022-01-24 12:54:36,763 INFO     Started server process [17476]
+2022-01-24 12:54:36,763 INFO     Waiting for application startup.
+2022-01-24 12:54:36,763 INFO     Application startup complete.
+2022-01-24 13:08:32,201 INFO     Started server process [10016]
+2022-01-24 13:08:32,202 INFO     Waiting for application startup.
+2022-01-24 13:08:32,204 INFO     Application startup complete.
+2022-01-24 13:46:48,663 INFO     Started server process [30200]
+2022-01-24 13:46:48,679 INFO     Waiting for application startup.
+2022-01-24 13:46:48,680 INFO     Application startup complete.
+2022-01-24 13:47:09,171 INFO     Started server process [26576]
+2022-01-24 13:47:09,172 INFO     Waiting for application startup.
+2022-01-24 13:47:09,174 INFO     Application startup complete.
+2022-01-24 13:48:21,864 INFO     Started server process [4028]
+2022-01-24 13:48:21,864 INFO     Waiting for application startup.
+2022-01-24 13:48:21,864 INFO     Application startup complete.
+2022-01-24 13:48:39,217 INFO     Started server process [14008]
+2022-01-24 13:48:39,217 INFO     Waiting for application startup.
+2022-01-24 13:48:39,217 INFO     Application startup complete.
+2022-01-24 13:49:12,173 INFO     Opened weight page
+2022-01-24 13:52:21,668 INFO     Opened weight page
+2022-01-24 14:17:56,805 INFO     Started server process [28796]
+2022-01-24 14:17:56,805 INFO     Waiting for application startup.
+2022-01-24 14:17:56,805 INFO     Application startup complete.
+2022-01-24 14:18:35,178 INFO     Started server process [28016]
+2022-01-24 14:18:35,178 INFO     Waiting for application startup.
+2022-01-24 14:18:35,183 INFO     Application startup complete.
+2022-01-24 14:19:00,841 INFO     Started server process [13520]
+2022-01-24 14:19:00,842 INFO     Waiting for application startup.
+2022-01-24 14:19:00,843 INFO     Application startup complete.
+2022-01-24 14:20:55,034 INFO     Started server process [27288]
+2022-01-24 14:20:55,035 INFO     Waiting for application startup.
+2022-01-24 14:20:55,036 INFO     Application startup complete.
+2022-01-24 14:20:58,464 INFO     Opened weight page
+2022-01-24 14:21:46,852 INFO     Started server process [29192]
+2022-01-24 14:21:46,852 INFO     Waiting for application startup.
+2022-01-24 14:21:46,859 INFO     Application startup complete.
+2022-01-24 14:22:09,600 INFO     Started server process [30248]
+2022-01-24 14:22:09,601 INFO     Waiting for application startup.
+2022-01-24 14:22:09,602 INFO     Application startup complete.
+2022-01-24 14:22:37,040 INFO     Started server process [30524]
+2022-01-24 14:22:37,041 INFO     Waiting for application startup.
+2022-01-24 14:22:37,042 INFO     Application startup complete.
+2022-01-24 14:22:48,294 INFO     Opened weight page
+2022-01-24 14:23:04,207 INFO     Opened head circumference page
+2022-01-24 14:23:12,693 INFO     Opened weight page
+2022-01-24 14:23:12,713 INFO     Opened height page
+2022-01-24 14:23:12,719 INFO     Opened head circumference page
+2022-01-24 14:23:12,754 INFO     Opened feeding page
+2022-01-24 14:23:14,590 INFO     Opened feeding page
+2022-01-24 14:23:46,156 INFO     Started server process [9652]
+2022-01-24 14:23:46,156 INFO     Waiting for application startup.
+2022-01-24 14:23:46,160 INFO     Application startup complete.
+2022-01-24 14:25:38,595 INFO     Started server process [29124]
+2022-01-24 14:25:38,596 INFO     Waiting for application startup.
+2022-01-24 14:25:38,597 INFO     Application startup complete.
+2022-01-24 14:25:51,003 INFO     Started server process [30232]
+2022-01-24 14:25:51,004 INFO     Waiting for application startup.
+2022-01-24 14:25:51,004 INFO     Application startup complete.
+2022-01-24 14:28:12,046 INFO     Started server process [27536]
+2022-01-24 14:28:12,046 INFO     Waiting for application startup.
+2022-01-24 14:28:12,047 INFO     Application startup complete.
+2022-01-24 14:29:19,554 INFO     Started server process [18408]
+2022-01-24 14:29:19,554 INFO     Waiting for application startup.
+2022-01-24 14:29:19,560 INFO     Application startup complete.
+2022-01-24 14:29:32,537 INFO     Started server process [26196]
+2022-01-24 14:29:32,538 INFO     Waiting for application startup.
+2022-01-24 14:29:32,539 INFO     Application startup complete.
+2022-01-24 14:32:24,065 INFO     Started server process [11096]
+2022-01-24 14:32:24,065 INFO     Waiting for application startup.
+2022-01-24 14:32:24,070 INFO     Application startup complete.
+2022-01-24 14:32:31,672 INFO     Started server process [21944]
+2022-01-24 14:32:31,672 INFO     Waiting for application startup.
+2022-01-24 14:32:31,678 INFO     Application startup complete.
+2022-01-24 14:33:01,740 INFO     Started server process [30484]
+2022-01-24 14:33:01,741 INFO     Waiting for application startup.
+2022-01-24 14:33:01,742 INFO     Application startup complete.
+2022-01-24 14:34:49,451 INFO     Started server process [26396]
+2022-01-24 14:34:49,451 INFO     Waiting for application startup.
+2022-01-24 14:34:49,452 INFO     Application startup complete.
+2022-01-24 14:36:32,869 INFO     Started server process [26960]
+2022-01-24 14:36:32,869 INFO     Waiting for application startup.
+2022-01-24 14:36:32,869 INFO     Application startup complete.
+2022-01-24 14:37:06,328 INFO     Started server process [29728]
+2022-01-24 14:37:06,329 INFO     Waiting for application startup.
+2022-01-24 14:37:06,330 INFO     Application startup complete.
+2022-01-24 14:38:38,016 INFO     Started server process [14304]
+2022-01-24 14:38:38,017 INFO     Waiting for application startup.
+2022-01-24 14:38:38,018 INFO     Application startup complete.
+2022-01-24 14:38:45,231 INFO     Started server process [17040]
+2022-01-24 14:38:45,231 INFO     Waiting for application startup.
+2022-01-24 14:38:45,231 INFO     Application startup complete.
+2022-01-24 14:39:27,907 INFO     Started server process [20940]
+2022-01-24 14:39:27,908 INFO     Waiting for application startup.
+2022-01-24 14:39:27,909 INFO     Application startup complete.
+2022-01-24 14:39:41,249 INFO     Started server process [13904]
+2022-01-24 14:39:41,250 INFO     Waiting for application startup.
+2022-01-24 14:39:41,251 INFO     Application startup complete.
+2022-01-24 14:39:56,080 INFO     Opened weight page
+2022-01-24 14:39:56,109 INFO     Opened height page
+2022-01-24 14:39:56,130 INFO     Opened head circumference page
+2022-01-24 14:39:56,151 INFO     Opened feeding page
+2022-01-24 14:39:57,165 INFO     Opened feeding page
+2022-01-24 15:32:43,091 INFO     Started server process [13720]
+2022-01-24 15:32:43,091 INFO     Waiting for application startup.
+2022-01-24 15:32:43,092 INFO     Application startup complete.
+2022-01-24 15:34:38,031 INFO     Started server process [21736]
+2022-01-24 15:34:38,032 INFO     Waiting for application startup.
+2022-01-24 15:34:38,033 INFO     Application startup complete.
+2022-01-24 15:35:12,189 INFO     Started server process [27128]
+2022-01-24 15:35:12,190 INFO     Waiting for application startup.
+2022-01-24 15:35:12,191 INFO     Application startup complete.
+2022-01-24 15:36:21,510 INFO     Started server process [28860]
+2022-01-24 15:36:21,511 INFO     Waiting for application startup.
+2022-01-24 15:36:21,512 INFO     Application startup complete.
+2022-01-24 15:37:06,250 INFO     Started server process [18136]
+2022-01-24 15:37:06,250 INFO     Waiting for application startup.
+2022-01-24 15:37:06,259 INFO     Application startup complete.
+2022-01-24 15:38:20,083 INFO     Started server process [5212]
+2022-01-24 15:38:20,084 INFO     Waiting for application startup.
+2022-01-24 15:38:20,084 INFO     Application startup complete.
+2022-01-24 15:38:22,665 INFO     Started server process [30644]
+2022-01-24 15:38:22,665 INFO     Waiting for application startup.
+2022-01-24 15:38:22,678 INFO     Application startup complete.
+2022-01-24 15:39:07,076 INFO     Opened head circumference page
+2022-01-24 15:55:03,318 INFO     Started server process [30540]
+2022-01-24 15:55:03,319 INFO     Waiting for application startup.
+2022-01-24 15:55:03,319 INFO     Application startup complete.
+2022-01-24 15:55:24,313 INFO     Opened head circumference page
+2022-01-24 16:01:04,214 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 107, in update_head
+    update_db_head(week, head)
+  File ".\app\db_utils.py", line 45, in update_db_head
+    cur.execute("INSERT INTO head_table (week, head) VALUES (?,?);", data_tuple)
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 2, and there are 1 supplied.
+2022-01-24 16:01:50,792 INFO     Started server process [12588]
+2022-01-24 16:01:50,792 INFO     Waiting for application startup.
+2022-01-24 16:01:50,792 INFO     Application startup complete.
+2022-01-24 16:01:56,498 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 107, in update_head
+    update_db_head(week, head)
+  File ".\app\db_utils.py", line 46, in update_db_head
+    cur.execute("INSERT INTO head_table (week, head) VALUES (?,?);", data_tuple)
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 2, and there are 1 supplied.
+2022-01-24 16:04:03,088 INFO     Started server process [28384]
+2022-01-24 16:04:03,088 INFO     Waiting for application startup.
+2022-01-24 16:04:03,094 INFO     Application startup complete.
+2022-01-24 16:04:44,271 INFO     Opened head circumference page
+2022-01-24 16:05:06,216 INFO     Opened weight page
+2022-01-24 16:05:06,238 INFO     Opened height page
+2022-01-24 16:05:06,262 INFO     Opened head circumference page
+2022-01-24 16:05:06,283 INFO     Opened feeding page
+2022-01-24 16:05:07,305 INFO     Opened feeding page
+2022-01-24 16:06:36,311 INFO     Started server process [27564]
+2022-01-24 16:06:36,312 INFO     Waiting for application startup.
+2022-01-24 16:06:36,313 INFO     Application startup complete.
+2022-01-24 16:06:50,054 INFO     Opened weight page
+2022-01-24 16:06:50,085 INFO     Opened height page
+2022-01-24 16:06:50,107 INFO     Opened head circumference page
+2022-01-24 16:06:50,128 INFO     Opened feeding page
+2022-01-24 16:06:51,116 INFO     Opened feeding page
+2022-01-24 16:08:11,455 INFO     Opened weight page
+2022-01-24 16:08:11,476 INFO     Opened height page
+2022-01-24 16:08:11,514 INFO     Opened head circumference page
+2022-01-24 16:08:11,535 INFO     Opened feeding page
+2022-01-24 16:08:12,510 INFO     Opened feeding page
+2022-01-25 08:42:41,624 INFO     Opened weight page
+2022-01-25 08:42:41,673 INFO     Opened height page
+2022-01-25 08:42:41,679 INFO     Opened head circumference page
+2022-01-25 08:42:41,710 INFO     Opened feeding page
+2022-01-25 08:42:42,846 INFO     Opened feeding page
+2022-01-25 10:29:36,172 INFO     Opened head circumference page
+2022-01-25 10:30:18,271 INFO     Opened head circumference page
+2022-01-25 10:31:41,737 INFO     Opened head circumference page
+2022-01-25 10:35:24,399 INFO     Opened head circumference page
+2022-01-25 10:37:35,523 INFO     Started server process [20956]
+2022-01-25 10:37:35,523 INFO     Waiting for application startup.
+2022-01-25 10:37:35,527 INFO     Application startup complete.
+2022-01-25 11:03:44,107 INFO     Started server process [31420]
+2022-01-25 11:03:44,108 INFO     Waiting for application startup.
+2022-01-25 11:03:44,109 INFO     Application startup complete.
+2022-01-25 11:04:42,959 INFO     Opened head circumference page
+2022-01-25 11:05:06,110 INFO     Started server process [31188]
+2022-01-25 11:05:06,111 INFO     Waiting for application startup.
+2022-01-25 11:05:06,112 INFO     Application startup complete.
+2022-01-25 11:05:37,997 INFO     Started server process [27952]
+2022-01-25 11:05:37,997 INFO     Waiting for application startup.
+2022-01-25 11:05:38,001 INFO     Application startup complete.
+2022-01-25 11:06:18,009 INFO     Started server process [8100]
+2022-01-25 11:06:18,010 INFO     Waiting for application startup.
+2022-01-25 11:06:18,011 INFO     Application startup complete.
+2022-01-25 11:08:14,037 INFO     Opened head circumference page
+2022-01-25 11:14:39,686 INFO     Opened head circumference page
+2022-01-25 11:15:08,794 INFO     Started server process [30992]
+2022-01-25 11:15:08,795 INFO     Waiting for application startup.
+2022-01-25 11:15:08,796 INFO     Application startup complete.
+2022-01-25 11:15:25,985 INFO     Started server process [3432]
+2022-01-25 11:15:25,986 INFO     Waiting for application startup.
+2022-01-25 11:15:25,987 INFO     Application startup complete.
+2022-01-25 11:15:30,222 INFO     Opened weight page
+2022-01-25 11:15:30,259 INFO     Opened height page
+2022-01-25 11:15:30,284 INFO     Opened head circumference page
+2022-01-25 11:15:30,309 INFO     Opened feeding page
+2022-01-25 11:15:31,321 INFO     Opened feeding page
+2022-01-25 12:53:14,358 INFO     Started server process [28576]
+2022-01-25 12:53:14,359 INFO     Waiting for application startup.
+2022-01-25 12:53:14,360 INFO     Application startup complete.
+2022-01-25 12:55:19,621 INFO     Started server process [13976]
+2022-01-25 12:55:19,621 INFO     Waiting for application startup.
+2022-01-25 12:55:19,627 INFO     Application startup complete.
+2022-01-25 12:57:02,013 INFO     Started server process [27576]
+2022-01-25 12:57:02,013 INFO     Waiting for application startup.
+2022-01-25 12:57:02,024 INFO     Application startup complete.
+2022-01-25 12:57:23,051 INFO     Started server process [31028]
+2022-01-25 12:57:23,051 INFO     Waiting for application startup.
+2022-01-25 12:57:23,053 INFO     Application startup complete.
+2022-01-25 12:57:26,030 INFO     Started server process [30604]
+2022-01-25 12:57:26,030 INFO     Waiting for application startup.
+2022-01-25 12:57:26,042 INFO     Application startup complete.
+2022-01-25 13:03:58,135 INFO     Opened weight page
+2022-01-25 13:03:58,162 INFO     Opened height page
+2022-01-25 13:03:58,188 INFO     Opened head circumference page
+2022-01-25 13:03:58,209 INFO     Opened feeding page
+2022-01-25 13:03:59,248 INFO     Opened feeding page
+2022-01-25 13:05:31,305 INFO     Opened weight page
+2022-01-25 13:05:31,329 INFO     Opened height page
+2022-01-25 13:05:31,352 INFO     Opened head circumference page
+2022-01-25 13:05:31,374 INFO     Opened feeding page
+2022-01-25 13:05:32,384 INFO     Opened feeding page
+2022-01-25 13:08:11,398 INFO     Opened weight page
+2022-01-25 13:08:11,427 INFO     Opened height page
+2022-01-25 13:08:11,450 INFO     Opened head circumference page
+2022-01-25 13:08:11,471 INFO     Opened feeding page
+2022-01-25 13:08:12,458 INFO     Opened feeding page
+2022-01-25 13:08:32,915 INFO     Opened weight page
+2022-01-25 13:08:32,943 INFO     Opened height page
+2022-01-25 13:08:32,965 INFO     Opened head circumference page
+2022-01-25 13:08:32,985 INFO     Opened feeding page
+2022-01-25 13:08:34,011 INFO     Opened feeding page
+2022-01-25 13:15:01,798 INFO     Opened head circumference page
+2022-01-25 13:15:39,932 INFO     Opened head circumference page
+2022-01-25 13:17:42,203 INFO     Opened weight page
+2022-01-25 13:17:42,231 INFO     Opened height page
+2022-01-25 13:17:42,252 INFO     Opened head circumference page
+2022-01-25 13:17:42,273 INFO     Opened feeding page
+2022-01-25 13:17:43,343 INFO     Opened feeding page
+2022-01-25 13:38:55,957 INFO     Opened weight page
+2022-01-25 13:38:55,994 INFO     Opened height page
+2022-01-25 13:38:56,014 INFO     Opened head circumference page
+2022-01-25 13:38:56,032 INFO     Opened feeding page
+2022-01-25 13:38:57,040 INFO     Opened feeding page
+2022-01-25 14:47:41,403 INFO     Opened weight page
+2022-01-25 14:47:41,430 INFO     Opened height page
+2022-01-25 14:47:41,451 INFO     Opened head circumference page
+2022-01-25 14:47:41,471 INFO     Opened feeding page
+2022-01-25 14:47:42,506 INFO     Opened feeding page
+2022-01-25 14:50:06,365 INFO     Opened weight page
+2022-01-25 14:50:06,392 INFO     Opened height page
+2022-01-25 14:50:06,407 INFO     Opened head circumference page
+2022-01-25 14:50:06,430 INFO     Opened feeding page
+2022-01-25 14:50:07,455 INFO     Opened feeding page
+2022-01-25 14:50:47,486 INFO     Opened weight page
+2022-01-25 14:50:47,504 INFO     Opened height page
+2022-01-25 14:50:47,533 INFO     Opened head circumference page
+2022-01-25 14:50:47,557 INFO     Opened feeding page
+2022-01-25 14:50:48,649 INFO     Opened feeding page
+2022-01-25 15:27:12,071 INFO     Opened weight page
+2022-01-25 15:27:12,097 INFO     Opened height page
+2022-01-25 15:27:12,116 INFO     Opened head circumference page
+2022-01-25 15:27:12,135 INFO     Opened feeding page
+2022-01-25 15:27:13,188 INFO     Opened feeding page
+2022-01-25 15:27:57,364 INFO     Opened weight page
+2022-01-25 15:27:57,386 INFO     Opened height page
+2022-01-25 15:27:57,397 INFO     Opened head circumference page
+2022-01-25 15:27:57,425 INFO     Opened feeding page
+2022-01-25 15:27:58,395 INFO     Opened feeding page
+2022-01-25 15:28:07,010 INFO     Opened head circumference page
+2022-01-25 16:03:53,035 INFO     Started server process [9524]
+2022-01-25 16:03:53,036 INFO     Waiting for application startup.
+2022-01-25 16:03:53,037 INFO     Application startup complete.
+2022-01-25 16:05:20,102 INFO     Started server process [30724]
+2022-01-25 16:05:20,102 INFO     Waiting for application startup.
+2022-01-25 16:05:20,110 INFO     Application startup complete.
+2022-01-25 16:12:50,426 INFO     Started server process [31096]
+2022-01-25 16:12:50,426 INFO     Waiting for application startup.
+2022-01-25 16:12:50,433 INFO     Application startup complete.
+2022-01-25 16:12:50,435 INFO     Opened weight page
+2022-01-25 16:13:57,279 INFO     Opened feeding page
+2022-01-25 16:15:56,132 INFO     Started server process [25016]
+2022-01-25 16:15:56,132 INFO     Waiting for application startup.
+2022-01-25 16:15:56,148 INFO     Application startup complete.
+2022-01-25 16:16:02,081 INFO     Opened feeding page
+2022-01-25 16:20:55,208 INFO     Started server process [2164]
+2022-01-25 16:20:55,209 INFO     Waiting for application startup.
+2022-01-25 16:20:55,210 INFO     Application startup complete.
+2022-01-25 16:21:04,187 INFO     Started server process [17360]
+2022-01-25 16:21:04,188 INFO     Waiting for application startup.
+2022-01-25 16:21:04,189 INFO     Application startup complete.
+2022-01-25 16:23:24,847 INFO     Started server process [28828]
+2022-01-25 16:23:24,848 INFO     Waiting for application startup.
+2022-01-25 16:23:24,849 INFO     Application startup complete.
+2022-01-25 16:23:30,357 INFO     Started server process [28332]
+2022-01-25 16:23:30,358 INFO     Waiting for application startup.
+2022-01-25 16:23:30,358 INFO     Application startup complete.
+2022-01-25 16:23:42,708 INFO     Started server process [26904]
+2022-01-25 16:23:42,708 INFO     Waiting for application startup.
+2022-01-25 16:23:42,708 INFO     Application startup complete.
+2022-01-25 16:27:02,177 INFO     Opened weight page
+2022-01-25 16:27:41,634 INFO     Opened weight page
+2022-01-25 16:33:52,631 INFO     Started server process [6728]
+2022-01-25 16:33:52,632 INFO     Waiting for application startup.
+2022-01-25 16:33:52,633 INFO     Application startup complete.
+2022-01-25 16:34:00,711 INFO     Started server process [13532]
+2022-01-25 16:34:00,711 INFO     Waiting for application startup.
+2022-01-25 16:34:00,711 INFO     Application startup complete.
+2022-01-25 16:40:40,970 INFO     Opened weight page
+2022-01-25 16:40:40,997 INFO     Opened height page
+2022-01-25 16:40:41,024 INFO     Opened head circumference page
+2022-01-25 16:40:41,044 INFO     Opened feeding page
+2022-01-25 16:40:42,119 INFO     Opened feeding page
+2022-01-25 16:41:23,825 INFO     Opened weight page
+2022-01-25 16:41:40,482 INFO     Opened weight page
+2022-01-25 16:41:44,080 INFO     Opened weight page
+2022-01-25 16:41:44,103 INFO     Opened height page
+2022-01-25 16:41:44,125 INFO     Opened head circumference page
+2022-01-25 16:41:44,150 INFO     Opened feeding page
+2022-01-25 16:41:45,188 INFO     Opened feeding page
+2022-01-25 17:10:45,372 INFO     Started server process [6404]
+2022-01-25 17:10:45,372 INFO     Waiting for application startup.
+2022-01-25 17:10:45,387 INFO     Application startup complete.
+2022-01-25 17:11:24,715 INFO     Started server process [18352]
+2022-01-25 17:11:24,715 INFO     Waiting for application startup.
+2022-01-25 17:11:24,716 INFO     Application startup complete.
+2022-01-25 17:11:41,492 INFO     Started server process [5012]
+2022-01-25 17:11:41,494 INFO     Waiting for application startup.
+2022-01-25 17:11:41,494 INFO     Application startup complete.
+2022-01-25 17:17:14,719 INFO     Started server process [14660]
+2022-01-25 17:17:14,720 INFO     Waiting for application startup.
+2022-01-25 17:17:14,720 INFO     Application startup complete.
+2022-01-25 17:18:36,173 INFO     Started server process [26628]
+2022-01-25 17:18:36,183 INFO     Waiting for application startup.
+2022-01-25 17:18:36,184 INFO     Application startup complete.
+2022-01-25 17:19:54,808 INFO     Started server process [20800]
+2022-01-25 17:19:54,808 INFO     Waiting for application startup.
+2022-01-25 17:19:54,813 INFO     Application startup complete.
+2022-01-25 17:20:04,684 INFO     Started server process [24120]
+2022-01-25 17:20:04,684 INFO     Waiting for application startup.
+2022-01-25 17:20:04,684 INFO     Application startup complete.
+2022-01-25 17:20:16,629 INFO     Started server process [26196]
+2022-01-25 17:20:16,630 INFO     Waiting for application startup.
+2022-01-25 17:20:16,630 INFO     Application startup complete.
+2022-01-25 17:23:21,796 INFO     Started server process [6780]
+2022-01-25 17:23:21,796 INFO     Waiting for application startup.
+2022-01-25 17:23:21,796 INFO     Application startup complete.
+2022-01-25 17:23:53,030 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 120, in update_wnh
+    update_db_feeding(date, time, bm_vol, formula_vol)
+  File ".\app\db_utils.py", line 64, in update_db_feeding
+    cur.execute("INSERT INTO weight_table (date, time, bm_vol, formula_vol) VALUES (?,?,?,?);", data_tuple)
+sqlite3.OperationalError: table weight_table has no column named time
+2022-01-25 17:24:09,230 INFO     Started server process [21736]
+2022-01-25 17:24:09,230 INFO     Waiting for application startup.
+2022-01-25 17:24:09,230 INFO     Application startup complete.
+2022-01-25 17:24:51,360 INFO     Opened feeding page
+2022-01-25 17:24:51,360 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 94, in feeding
+    result = get_db_data("feeding")
+  File ".\app\db_utils.py", line 28, in get_db_data
+    df['total_vol'] = df.bm_vol.astype(int) + df.formula_vol.astype(int)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\generic.py", line 5815, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 418, in astype
+    return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 327, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\blocks.py", line 591, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1309, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1257, in astype_array
+    values = astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1174, in astype_nansafe
+    return lib.astype_intsafe(arr, dtype)
+  File "pandas\_libs\lib.pyx", line 679, in pandas._libs.lib.astype_intsafe
+ValueError: invalid literal for int() with base 10: '120.0'
+2022-01-25 17:25:01,422 INFO     Opened weight page
+2022-01-25 17:25:06,629 INFO     Opened height page
+2022-01-25 17:25:25,935 INFO     Opened weight page
+2022-01-25 17:27:50,694 INFO     Started server process [31112]
+2022-01-25 17:27:50,695 INFO     Waiting for application startup.
+2022-01-25 17:27:50,696 INFO     Application startup complete.
+2022-01-25 17:28:46,030 INFO     Opened weight page
+2022-01-25 17:28:54,048 INFO     Opened feeding page
+2022-01-25 17:28:54,048 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 94, in feeding
+    result = get_db_data("feeding")
+  File ".\app\db_utils.py", line 28, in get_db_data
+    df['total_vol'] = df.bm_vol.astype(int) + df.formula_vol.astype(int)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\generic.py", line 5815, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 418, in astype
+    return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 327, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\blocks.py", line 591, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1309, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1257, in astype_array
+    values = astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1174, in astype_nansafe
+    return lib.astype_intsafe(arr, dtype)
+  File "pandas\_libs\lib.pyx", line 679, in pandas._libs.lib.astype_intsafe
+ValueError: invalid literal for int() with base 10: '120.0'
+2022-01-25 19:53:35,004 INFO     Opened weight page
+2022-01-25 19:54:56,713 INFO     Opened feeding page
+2022-01-25 19:54:56,716 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 94, in feeding
+    result = get_db_data("feeding")
+  File ".\app\db_utils.py", line 28, in get_db_data
+    df['total_vol'] = df.bm_vol.astype(int) + df.formula_vol.astype(int)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\generic.py", line 5815, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 418, in astype
+    return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 327, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\blocks.py", line 591, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1309, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1257, in astype_array
+    values = astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1174, in astype_nansafe
+    return lib.astype_intsafe(arr, dtype)
+  File "pandas\_libs\lib.pyx", line 679, in pandas._libs.lib.astype_intsafe
+ValueError: invalid literal for int() with base 10: '120.0'
+2022-01-25 19:58:22,749 INFO     Opened weight page
+2022-01-25 19:58:22,774 INFO     Opened height page
+2022-01-25 19:58:22,795 INFO     Opened head circumference page
+2022-01-25 19:58:22,817 INFO     Opened feeding page
+2022-01-25 19:58:22,822 ERROR    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app\main.py", line 94, in feeding
+    result = get_db_data("feeding")
+  File ".\app\db_utils.py", line 28, in get_db_data
+    df['total_vol'] = df.bm_vol.astype(int) + df.formula_vol.astype(int)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\generic.py", line 5815, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 418, in astype
+    return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\managers.py", line 327, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\internals\blocks.py", line 591, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1309, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1257, in astype_array
+    values = astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\PatCa\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py", line 1174, in astype_nansafe
+    return lib.astype_intsafe(arr, dtype)
+  File "pandas\_libs\lib.pyx", line 679, in pandas._libs.lib.astype_intsafe
+ValueError: invalid literal for int() with base 10: '120.0'
+2022-01-25 19:58:59,807 INFO     Opened head circumference page
+2022-01-25 20:01:12,429 INFO     Opened head circumference page
+2022-01-25 20:02:42,848 INFO     Opened weight page
+2022-01-25 20:02:42,871 INFO     Opened height page
+2022-01-25 20:02:42,894 INFO     Opened head circumference page
+2022-01-25 20:02:42,921 INFO     Opened feeding page
+2022-01-25 20:02:43,921 INFO     Opened feeding page
+2022-01-25 20:05:44,788 INFO     Opened head circumference page
+2022-01-25 20:05:51,438 INFO     Opened weight page
+2022-01-25 20:06:00,777 INFO     Opened feeding page
+2022-01-25 20:06:11,545 INFO     Opened weight page
+2022-01-25 20:06:11,566 INFO     Opened height page
+2022-01-25 20:06:11,585 INFO     Opened head circumference page
+2022-01-25 20:06:11,605 INFO     Opened feeding page
+2022-01-25 20:06:12,742 INFO     Opened feeding page
+2022-01-25 21:16:59,330 INFO     Opened weight page
+2022-01-25 21:16:59,359 INFO     Opened height page
+2022-01-25 21:16:59,379 INFO     Opened head circumference page
+2022-01-25 21:16:59,399 INFO     Opened feeding page
+2022-01-25 21:17:00,407 INFO     Opened feeding page
+2022-01-25 23:02:37,449 INFO     Opened weight page
+2022-01-25 23:02:37,491 INFO     Opened height page
+2022-01-25 23:02:37,512 INFO     Opened head circumference page
+2022-01-25 23:02:37,535 INFO     Opened feeding page
+2022-01-25 23:02:38,680 INFO     Opened feeding page
+2022-01-25 23:02:53,716 INFO     Opened weight page
+2022-01-25 23:02:53,759 INFO     Opened height page
+2022-01-25 23:02:53,785 INFO     Opened head circumference page
+2022-01-25 23:02:53,810 INFO     Opened feeding page
+2022-01-25 23:02:54,810 INFO     Opened feeding page
+2022-01-25 23:05:12,252 INFO     Started server process [19104]
+2022-01-25 23:05:12,253 INFO     Waiting for application startup.
+2022-01-25 23:05:12,254 INFO     Application startup complete.
+2022-01-25 23:05:21,944 INFO     Started server process [29880]
+2022-01-25 23:05:21,944 INFO     Waiting for application startup.
+2022-01-25 23:05:21,947 INFO     Application startup complete.
+2022-01-25 23:07:37,321 INFO     Opened weight page
+2022-01-25 23:07:37,353 INFO     Opened height page
+2022-01-25 23:07:37,373 INFO     Opened head circumference page
+2022-01-25 23:07:37,394 INFO     Opened feeding page
+2022-01-25 23:07:38,358 INFO     Opened feeding page
+2022-01-25 23:07:46,393 INFO     Opened weight page
+2022-01-25 23:07:46,428 INFO     Opened height page
+2022-01-25 23:07:46,455 INFO     Opened head circumference page
+2022-01-25 23:07:46,476 INFO     Opened feeding page
+2022-01-25 23:07:47,473 INFO     Opened feeding page
+2022-01-25 23:09:25,429 INFO     Opened weight page
+2022-01-25 23:09:25,456 INFO     Opened height page
+2022-01-25 23:09:25,479 INFO     Opened head circumference page
+2022-01-25 23:09:25,500 INFO     Opened feeding page
+2022-01-25 23:09:26,465 INFO     Opened feeding page
+2022-01-25 23:09:41,102 INFO     Opened weight page
+2022-01-25 23:09:41,125 INFO     Opened height page
+2022-01-25 23:09:41,145 INFO     Opened head circumference page
+2022-01-25 23:09:41,165 INFO     Opened feeding page
+2022-01-25 23:09:42,204 INFO     Opened feeding page
+2022-01-25 23:22:20,466 INFO     Opened weight page
+2022-01-25 23:22:20,492 INFO     Opened height page
+2022-01-25 23:22:20,509 INFO     Opened head circumference page
+2022-01-25 23:22:20,533 INFO     Opened feeding page
+2022-01-25 23:22:21,558 INFO     Opened feeding page
+2022-01-25 23:23:34,122 INFO     Opened weight page
+2022-01-25 23:23:34,146 INFO     Opened height page
+2022-01-25 23:23:34,157 INFO     Opened head circumference page
+2022-01-25 23:23:34,187 INFO     Opened feeding page
+2022-01-25 23:23:35,206 INFO     Opened feeding page
+2022-01-25 23:26:22,206 INFO     Opened weight page
+2022-01-25 23:26:22,229 INFO     Opened height page
+2022-01-25 23:26:22,259 INFO     Opened head circumference page
+2022-01-25 23:26:22,279 INFO     Opened feeding page
+2022-01-25 23:26:23,397 INFO     Opened feeding page
+2022-01-25 23:26:37,614 INFO     Opened weight page
+2022-01-25 23:26:37,638 INFO     Opened height page
+2022-01-25 23:26:37,658 INFO     Opened head circumference page
+2022-01-25 23:26:37,679 INFO     Opened feeding page
+2022-01-25 23:26:38,703 INFO     Opened feeding page
+2022-01-25 23:28:12,417 INFO     Opened weight page
+2022-01-25 23:28:12,445 INFO     Opened height page
+2022-01-25 23:28:12,467 INFO     Opened head circumference page
+2022-01-25 23:28:12,489 INFO     Opened feeding page
+2022-01-25 23:28:13,558 INFO     Opened feeding page
+2022-01-25 23:31:30,564 INFO     Opened weight page
+2022-01-25 23:31:30,599 INFO     Opened height page
+2022-01-25 23:31:30,619 INFO     Opened head circumference page
+2022-01-25 23:31:30,640 INFO     Opened feeding page
+2022-01-25 23:31:31,612 INFO     Opened feeding page
+2022-01-25 23:36:27,526 INFO     Opened weight page
+2022-01-25 23:36:27,546 INFO     Opened height page
+2022-01-25 23:36:27,594 INFO     Opened head circumference page
+2022-01-25 23:36:27,615 INFO     Opened feeding page
+2022-01-25 23:36:28,709 INFO     Opened feeding page
+2022-01-25 23:36:43,044 INFO     Opened weight page
+2022-01-25 23:36:43,074 INFO     Opened height page
+2022-01-25 23:36:43,093 INFO     Opened head circumference page
+2022-01-25 23:36:43,113 INFO     Opened feeding page
+2022-01-25 23:36:44,025 INFO     Opened feeding page
+2022-01-26 10:23:46,908 INFO     Opened weight page
+2022-01-26 10:23:46,934 INFO     Opened height page
+2022-01-26 10:23:46,940 INFO     Opened head circumference page
+2022-01-26 10:23:46,979 INFO     Opened feeding page
+2022-01-26 10:23:47,997 INFO     Opened feeding page
+2022-01-26 10:26:51,854 INFO     Opened weight page
+2022-01-26 10:26:51,887 INFO     Opened height page
+2022-01-26 10:26:51,907 INFO     Opened head circumference page
+2022-01-26 10:26:51,928 INFO     Opened feeding page
+2022-01-26 10:26:52,934 INFO     Opened feeding page
+2022-01-26 10:40:43,849 INFO     Opened weight page
+2022-01-26 10:40:43,872 INFO     Opened height page
+2022-01-26 10:40:43,897 INFO     Opened head circumference page
+2022-01-26 10:40:43,920 INFO     Opened feeding page
+2022-01-26 10:40:44,929 INFO     Opened feeding page
+2022-01-26 13:58:08,406 INFO     Opened weight page
+2022-01-26 13:58:08,448 INFO     Opened height page
+2022-01-26 13:58:08,469 INFO     Opened head circumference page
+2022-01-26 13:58:08,491 INFO     Opened feeding page
+2022-01-26 13:58:09,533 INFO     Opened feeding page
+2022-01-26 13:58:31,323 INFO     Opened weight page
+2022-01-26 13:58:31,358 INFO     Opened height page
+2022-01-26 13:58:31,378 INFO     Opened head circumference page
+2022-01-26 13:58:31,397 INFO     Opened feeding page
+2022-01-26 13:58:32,324 INFO     Opened feeding page
+2022-01-26 15:26:04,996 INFO     Shutting down
+2022-01-26 15:26:05,109 INFO     Waiting for application shutdown.
+2022-01-26 15:26:05,114 INFO     Application shutdown complete.
+2022-01-26 15:26:05,116 INFO     Finished server process [29880]
