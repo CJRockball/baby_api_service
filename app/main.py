@@ -99,24 +99,5 @@ async def feeding():
     result = dict(result)
     return result
 
-@datas.get("/reset_db")
-def reset_db():
-    reset_fcn()
-    return
 
-@datas.post("/wnh_update")
-async def update_wnh(date: str, week: float, weight: float, height: float):
-    update_db_wnh(date, week, weight, height)
-    return 
-
-@datas.post("/head_update")
-async def update_head(week: float, head: float):
-    update_db_head(week, head)
-    return    
-    
-
-@datas.post("/feeding_update")
-async def update_wnh(date: str, time: str, bm_vol: int, formula_vol: int):
-    update_db_feeding(date, time, bm_vol, formula_vol)
-    return 
 
