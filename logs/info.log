@@ -1,0 +1,15 @@
+2022-01-30 10:16:26,941 INFO     Started server process [24028]
+2022-01-30 10:16:26,941 INFO     Waiting for application startup.
+2022-01-30 10:16:26,957 INFO     Application startup complete.
+2022-01-30 10:16:41,038 INFO     Opened feeding page
+2022-01-30 10:30:19,954 INFO     Started server process [30744]
+2022-01-30 10:30:19,954 INFO     Waiting for application startup.
+2022-01-30 10:30:19,960 INFO     Application startup complete.
+2022-01-30 10:30:23,853 INFO     Opened feeding page
+2022-01-30 10:44:04,228 INFO     Shutting down
+2022-01-30 10:44:04,341 INFO     Waiting for application shutdown.
+2022-01-30 10:44:04,341 INFO     Application shutdown complete.
+2022-01-30 10:44:04,343 INFO     Finished server process [30744]
+2022-01-30 10:48:10,170 INFO     Started server process [25256]
+2022-01-30 10:48:10,199 INFO     Waiting for application startup.
+2022-01-30 10:48:10,200 INFO     Application startup complete.
