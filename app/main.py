@@ -43,11 +43,6 @@ async def index_get():
     return
 
 
-# class WeightItem(BaseModel):
-#     date: List[datetime.date]
-#     week: List[float]
-#     weight: List[float]
-
 @datas.get("/weight")
 async def weight_data_page():
     logging.info("Opened weight page")
