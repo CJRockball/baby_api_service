@@ -47,7 +47,14 @@ def setup_db():
                     bm_vol TEXT,
                     formula_vol TEXT);"""
     )
-        
+     
+    cur.execute(
+        """CREATE TABLE IF NOT EXISTS sleep_table (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    date TEXT,
+                    wake TEXT,
+                    sleep TEXT);"""
+    )   
     # Write changes
     conn.commit()
     conn.close()
@@ -89,11 +96,14 @@ def reset_fcn():
     height_tuple = tuplefy("height_data.ods")
     head_tuple = tuplefy("head_data.ods")
     feeding_tuple = tuplefy("feeding.ods")
+    sleep_tuple = tuplefy("wake_data.ods")        
         
     data_insert(weight_tuple, "INSERT OR IGNORE INTO weight_table (date, week, weight) VALUES (?,?,?);" "")
     data_insert(height_tuple, "INSERT OR IGNORE INTO height_table (week, height) VALUES (?,?);" "")
     data_insert(head_tuple, "INSERT OR IGNORE INTO head_table (week, head) VALUES (?,?);" "")
     data_insert(feeding_tuple, "INSERT OR IGNORE INTO feeding_table (date, time, bm_vol, formula_vol) VALUES (?,?,?,?);" "")
+    data_insert(sleep_tuple, "INSERT OR IGNORE INTO sleep_table (date, wake, sleep) VALUES (?,?,?);" "")
+
     return
 
 
@@ -104,10 +114,12 @@ if __name__ == "__main__":
     height_tuple = tuplefy("height_data.ods")
     head_tuple = tuplefy("head_data.ods")
     feeding_tuple = tuplefy("feeding.ods")
+    sleep_tuple = tuplefy("wake_data.ods")        
         
     data_insert(weight_tuple, "INSERT OR IGNORE INTO weight_table (date, week, weight) VALUES (?,?,?);" "")
     data_insert(height_tuple, "INSERT OR IGNORE INTO height_table (week, height) VALUES (?,?);" "")
     data_insert(head_tuple, "INSERT OR IGNORE INTO head_table (week, head) VALUES (?,?);" "")
     data_insert(feeding_tuple, "INSERT OR IGNORE INTO feeding_table (date, time, bm_vol, formula_vol) VALUES (?,?,?,?);" "")
+    data_insert(sleep_tuple, "INSERT OR IGNORE INTO sleep_table (date, wake, sleep) VALUES (?,?,?);" "")
 
 

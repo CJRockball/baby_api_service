@@ -84,3 +84,289 @@
 2022-03-08 14:42:29,625 INFO     Opened head circumference page
 2022-03-08 14:42:29,645 INFO     Opened feeding page
 2022-03-08 14:42:31,515 INFO     Opened feeding page
+2022-03-22 18:54:00,243 INFO     Started server process [7320]
+2022-03-22 18:54:00,243 INFO     Waiting for application startup.
+2022-03-22 18:54:00,246 INFO     Application startup complete.
+2022-03-22 18:56:37,293 INFO     Shutting down
+2022-03-22 18:56:37,393 INFO     Waiting for application shutdown.
+2022-03-22 18:56:37,393 INFO     Application shutdown complete.
+2022-03-22 18:56:37,393 INFO     Finished server process [7320]
+2022-03-22 18:58:31,243 INFO     Started server process [25652]
+2022-03-22 18:58:31,244 INFO     Waiting for application startup.
+2022-03-22 18:58:31,245 INFO     Application startup complete.
+2022-03-22 19:00:23,272 INFO     Opened weight page
+2022-03-22 19:00:23,308 INFO     Opened height page
+2022-03-22 19:00:23,338 INFO     Opened head circumference page
+2022-03-22 19:00:23,358 INFO     Opened feeding page
+2022-03-22 19:00:25,293 INFO     Opened feeding page
+2022-03-22 19:05:34,758 INFO     Opened weight page
+2022-03-22 19:05:34,784 INFO     Opened height page
+2022-03-22 19:05:34,802 INFO     Opened head circumference page
+2022-03-22 19:05:34,824 INFO     Opened feeding page
+2022-03-22 21:13:02,577 INFO     Opened weight page
+2022-03-22 21:13:02,606 INFO     Opened height page
+2022-03-22 21:13:02,627 INFO     Opened head circumference page
+2022-03-22 21:13:02,650 INFO     Opened feeding page
+2022-03-22 21:13:04,712 INFO     Opened feeding page
+2022-03-23 14:18:49,128 INFO     Started server process [18752]
+2022-03-23 14:18:49,128 INFO     Waiting for application startup.
+2022-03-23 14:18:49,135 INFO     Application startup complete.
+2022-03-23 14:19:09,575 INFO     Opened weight page
+2022-03-23 14:19:09,603 INFO     Opened height page
+2022-03-23 14:19:09,620 INFO     Opened head circumference page
+2022-03-23 14:19:09,647 INFO     Opened feeding page
+2022-03-23 14:20:34,115 INFO     Opened weight page
+2022-03-23 14:20:34,138 INFO     Opened height page
+2022-03-23 14:20:34,158 INFO     Opened head circumference page
+2022-03-23 14:20:34,178 INFO     Opened feeding page
+2022-03-23 14:20:36,175 INFO     Opened feeding page
+2022-03-23 14:21:27,158 INFO     Opened weight page
+2022-03-23 14:21:27,191 INFO     Opened height page
+2022-03-23 14:21:27,210 INFO     Opened head circumference page
+2022-03-23 14:21:27,236 INFO     Opened feeding page
+2022-03-23 19:23:25,225 INFO     Opened weight page
+2022-03-23 19:23:25,254 INFO     Opened height page
+2022-03-23 19:23:25,275 INFO     Opened head circumference page
+2022-03-23 19:23:25,328 INFO     Opened feeding page
+2022-03-23 19:23:27,290 INFO     Opened feeding page
+2022-04-15 09:42:05,646 INFO     Started server process [17120]
+2022-04-15 09:42:05,661 INFO     Waiting for application startup.
+2022-04-15 09:42:05,663 INFO     Application startup complete.
+2022-04-15 09:44:57,648 INFO     Opened weight page
+2022-04-15 09:44:57,682 INFO     Opened height page
+2022-04-15 09:44:57,702 INFO     Opened head circumference page
+2022-04-15 09:44:57,721 INFO     Opened feeding page
+2022-04-15 09:44:59,601 INFO     Opened feeding page
+2022-04-15 09:47:14,292 INFO     Opened weight page
+2022-04-15 09:47:14,319 INFO     Opened height page
+2022-04-15 09:47:14,339 INFO     Opened head circumference page
+2022-04-15 09:47:14,357 INFO     Opened feeding page
+2022-04-15 09:47:16,228 INFO     Opened feeding page
+2022-04-15 09:50:49,507 INFO     Opened weight page
+2022-04-15 09:50:49,530 INFO     Opened height page
+2022-04-15 09:50:49,541 INFO     Opened head circumference page
+2022-04-15 09:50:49,569 INFO     Opened feeding page
+2022-04-15 09:50:51,517 INFO     Opened feeding page
+2022-04-15 09:51:35,308 INFO     Opened weight page
+2022-04-15 09:51:35,341 INFO     Opened height page
+2022-04-15 09:51:35,359 INFO     Opened head circumference page
+2022-04-15 09:51:35,382 INFO     Opened feeding page
+2022-04-15 09:51:37,292 INFO     Opened feeding page
+2022-04-15 09:54:47,561 INFO     Opened weight page
+2022-04-15 09:54:47,584 INFO     Opened height page
+2022-04-15 09:54:47,602 INFO     Opened head circumference page
+2022-04-15 09:54:47,629 INFO     Opened feeding page
+2022-04-15 09:59:39,528 INFO     Opened weight page
+2022-04-15 09:59:39,561 INFO     Opened height page
+2022-04-15 09:59:39,578 INFO     Opened head circumference page
+2022-04-15 09:59:39,602 INFO     Opened feeding page
+2022-04-15 09:59:41,530 INFO     Opened feeding page
+2022-04-15 10:21:19,789 INFO     Opened weight page
+2022-04-15 10:21:19,812 INFO     Opened height page
+2022-04-15 10:21:19,824 INFO     Opened head circumference page
+2022-04-15 10:21:19,851 INFO     Opened feeding page
+2022-04-15 10:21:21,728 INFO     Opened feeding page
+2022-04-15 10:28:40,786 INFO     Opened weight page
+2022-04-15 10:28:40,813 INFO     Opened height page
+2022-04-15 10:28:40,832 INFO     Opened head circumference page
+2022-04-15 10:28:40,852 INFO     Opened feeding page
+2022-04-15 10:30:52,304 INFO     Opened weight page
+2022-04-15 10:30:52,326 INFO     Opened height page
+2022-04-15 10:30:52,346 INFO     Opened head circumference page
+2022-04-15 10:30:52,367 INFO     Opened feeding page
+2022-04-15 10:31:08,882 INFO     Opened weight page
+2022-04-15 10:31:08,904 INFO     Opened height page
+2022-04-15 10:31:08,927 INFO     Opened head circumference page
+2022-04-15 10:31:08,947 INFO     Opened feeding page
+2022-04-15 10:31:37,899 INFO     Opened weight page
+2022-04-15 10:31:37,929 INFO     Opened height page
+2022-04-15 10:31:37,950 INFO     Opened head circumference page
+2022-04-15 10:31:37,969 INFO     Opened feeding page
+2022-04-15 10:33:29,196 INFO     Opened weight page
+2022-04-15 10:33:29,209 INFO     Opened height page
+2022-04-15 10:33:29,228 INFO     Opened head circumference page
+2022-04-15 10:33:29,261 INFO     Opened feeding page
+2022-04-15 10:34:17,264 INFO     Opened weight page
+2022-04-15 10:34:17,286 INFO     Opened height page
+2022-04-15 10:34:17,307 INFO     Opened head circumference page
+2022-04-15 10:34:17,328 INFO     Opened feeding page
+2022-04-15 10:34:19,168 INFO     Opened feeding page
+2022-04-15 10:35:54,834 INFO     Opened weight page
+2022-04-15 10:35:54,860 INFO     Opened height page
+2022-04-15 10:35:54,884 INFO     Opened head circumference page
+2022-04-15 10:35:54,904 INFO     Opened feeding page
+2022-04-15 10:35:56,700 INFO     Opened feeding page
+2022-04-15 10:36:23,145 INFO     Opened weight page
+2022-04-15 10:36:23,170 INFO     Opened height page
+2022-04-15 10:36:23,190 INFO     Opened head circumference page
+2022-04-15 10:36:23,209 INFO     Opened feeding page
+2022-04-15 10:36:25,064 INFO     Opened feeding page
+2022-04-15 10:37:03,960 INFO     Opened weight page
+2022-04-15 10:37:03,984 INFO     Opened height page
+2022-04-15 10:37:04,007 INFO     Opened head circumference page
+2022-04-15 10:37:04,028 INFO     Opened feeding page
+2022-04-15 10:37:05,886 INFO     Opened feeding page
+2022-04-15 10:37:41,585 INFO     Opened weight page
+2022-04-15 10:37:41,616 INFO     Opened height page
+2022-04-15 10:37:41,628 INFO     Opened head circumference page
+2022-04-15 10:37:41,655 INFO     Opened feeding page
+2022-04-15 10:37:43,569 INFO     Opened feeding page
+2022-04-15 10:38:08,118 INFO     Opened weight page
+2022-04-15 10:38:08,141 INFO     Opened height page
+2022-04-15 10:38:08,163 INFO     Opened head circumference page
+2022-04-15 10:38:08,185 INFO     Opened feeding page
+2022-04-15 10:38:10,013 INFO     Opened feeding page
+2022-04-15 10:39:15,705 INFO     Opened weight page
+2022-04-15 10:39:15,740 INFO     Opened height page
+2022-04-15 10:39:15,763 INFO     Opened head circumference page
+2022-04-15 10:39:15,784 INFO     Opened feeding page
+2022-04-15 10:39:17,710 INFO     Opened feeding page
+2022-04-15 11:05:37,194 INFO     Opened weight page
+2022-04-15 11:05:37,210 INFO     Opened height page
+2022-04-15 11:05:37,229 INFO     Opened head circumference page
+2022-04-15 11:05:37,261 INFO     Opened feeding page
+2022-04-15 11:05:39,120 INFO     Opened feeding page
+2022-04-15 11:06:32,102 INFO     Opened weight page
+2022-04-15 11:06:32,122 INFO     Opened height page
+2022-04-15 11:06:32,145 INFO     Opened head circumference page
+2022-04-15 11:06:32,165 INFO     Opened feeding page
+2022-04-15 11:06:34,042 INFO     Opened feeding page
+2022-04-15 11:07:09,144 INFO     Opened weight page
+2022-04-15 11:07:09,168 INFO     Opened height page
+2022-04-15 11:07:09,198 INFO     Opened head circumference page
+2022-04-15 11:07:09,220 INFO     Opened feeding page
+2022-04-15 11:08:00,839 INFO     Opened weight page
+2022-04-15 11:08:00,868 INFO     Opened height page
+2022-04-15 11:08:00,887 INFO     Opened head circumference page
+2022-04-15 11:08:00,906 INFO     Opened feeding page
+2022-04-15 11:10:55,052 INFO     Opened weight page
+2022-04-15 11:10:55,076 INFO     Opened height page
+2022-04-15 11:10:55,085 INFO     Opened head circumference page
+2022-04-15 11:10:55,114 INFO     Opened feeding page
+2022-04-15 11:17:55,235 INFO     Opened weight page
+2022-04-15 11:17:55,271 INFO     Opened height page
+2022-04-15 11:17:55,277 INFO     Opened head circumference page
+2022-04-15 11:17:55,310 INFO     Opened feeding page
+2022-04-15 11:19:13,901 INFO     Opened head circumference page
+2022-04-15 11:19:19,273 INFO     Opened height page
+2022-04-15 11:20:14,101 INFO     Opened height page
+2022-04-15 11:21:37,757 INFO     Opened height page
+2022-04-15 11:21:44,956 INFO     Opened head circumference page
+2022-04-15 11:21:51,338 INFO     Opened height page
+2022-04-15 11:38:50,317 INFO     Opened height page
+2022-04-15 11:38:59,437 INFO     Opened weight page
+2022-04-15 11:41:02,947 INFO     Opened height page
+2022-04-15 11:41:08,944 INFO     Opened weight page
+2022-04-15 11:41:08,966 INFO     Opened height page
+2022-04-15 11:41:08,977 INFO     Opened head circumference page
+2022-04-15 11:41:09,011 INFO     Opened feeding page
+2022-04-15 11:41:10,900 INFO     Opened feeding page
+2022-04-16 16:45:03,031 INFO     Opened weight page
+2022-04-16 16:45:03,065 INFO     Opened height page
+2022-04-16 16:45:03,088 INFO     Opened head circumference page
+2022-04-16 16:45:03,108 INFO     Opened feeding page
+2022-04-16 16:45:05,366 INFO     Opened feeding page
+2022-04-16 16:47:35,175 INFO     Opened weight page
+2022-04-16 16:47:35,198 INFO     Opened height page
+2022-04-16 16:47:35,211 INFO     Opened head circumference page
+2022-04-16 16:47:35,237 INFO     Opened feeding page
+2022-04-16 16:48:09,251 INFO     Opened weight page
+2022-04-16 16:48:09,281 INFO     Opened height page
+2022-04-16 16:48:09,303 INFO     Opened head circumference page
+2022-04-16 16:48:09,322 INFO     Opened feeding page
+2022-04-16 16:49:01,445 INFO     Opened weight page
+2022-04-16 16:49:01,469 INFO     Opened height page
+2022-04-16 16:49:01,490 INFO     Opened head circumference page
+2022-04-16 16:49:01,515 INFO     Opened feeding page
+2022-04-16 16:49:03,368 INFO     Opened feeding page
+2022-04-16 16:49:15,433 INFO     Opened weight page
+2022-04-16 16:49:15,458 INFO     Opened height page
+2022-04-16 16:49:15,480 INFO     Opened head circumference page
+2022-04-16 16:49:15,500 INFO     Opened feeding page
+2022-04-16 16:49:17,342 INFO     Opened feeding page
+2022-04-16 16:49:29,607 INFO     Opened weight page
+2022-04-16 16:49:29,629 INFO     Opened height page
+2022-04-16 16:49:29,641 INFO     Opened head circumference page
+2022-04-16 16:49:29,669 INFO     Opened feeding page
+2022-04-16 16:49:31,495 INFO     Opened feeding page
+2022-04-16 16:49:45,915 INFO     Opened weight page
+2022-04-16 16:49:45,940 INFO     Opened height page
+2022-04-16 16:49:45,950 INFO     Opened head circumference page
+2022-04-16 16:49:45,978 INFO     Opened feeding page
+2022-04-16 16:49:47,781 INFO     Opened feeding page
+2022-04-16 16:51:39,296 INFO     Opened weight page
+2022-04-16 16:51:39,319 INFO     Opened height page
+2022-04-16 16:51:39,338 INFO     Opened head circumference page
+2022-04-16 16:51:39,359 INFO     Opened feeding page
+2022-04-16 16:51:41,144 INFO     Opened feeding page
+2022-04-16 16:52:04,040 INFO     Opened weight page
+2022-04-16 16:52:04,062 INFO     Opened height page
+2022-04-16 16:52:04,082 INFO     Opened head circumference page
+2022-04-16 16:52:04,103 INFO     Opened feeding page
+2022-04-16 16:52:05,987 INFO     Opened feeding page
+2022-04-16 16:55:13,841 INFO     Started server process [15728]
+2022-04-16 16:55:13,842 INFO     Waiting for application startup.
+2022-04-16 16:55:13,843 INFO     Application startup complete.
+2022-04-16 16:55:42,152 INFO     Opened weight page
+2022-04-16 16:55:42,174 INFO     Opened height page
+2022-04-16 16:55:42,195 INFO     Opened head circumference page
+2022-04-16 16:55:42,219 INFO     Opened feeding page
+2022-04-16 16:55:44,154 INFO     Opened feeding page
+2022-04-16 16:56:06,824 INFO     Opened weight page
+2022-04-16 16:56:06,849 INFO     Opened height page
+2022-04-16 16:56:06,875 INFO     Opened head circumference page
+2022-04-16 16:56:06,897 INFO     Opened feeding page
+2022-04-16 16:56:08,782 INFO     Opened feeding page
+2022-04-16 17:10:31,406 INFO     Started server process [10116]
+2022-04-16 17:10:31,407 INFO     Waiting for application startup.
+2022-04-16 17:10:31,408 INFO     Application startup complete.
+2022-04-16 17:17:21,225 INFO     Started server process [18024]
+2022-04-16 17:17:21,225 INFO     Waiting for application startup.
+2022-04-16 17:17:21,229 INFO     Application startup complete.
+2022-04-16 17:20:27,135 INFO     Started server process [15144]
+2022-04-16 17:20:27,136 INFO     Waiting for application startup.
+2022-04-16 17:20:27,137 INFO     Application startup complete.
+2022-04-16 17:21:06,051 INFO     Started server process [17312]
+2022-04-16 17:21:06,052 INFO     Waiting for application startup.
+2022-04-16 17:21:06,053 INFO     Application startup complete.
+2022-04-16 17:22:23,928 INFO     Started server process [16804]
+2022-04-16 17:22:23,928 INFO     Waiting for application startup.
+2022-04-16 17:22:23,937 INFO     Application startup complete.
+2022-04-16 17:22:30,342 INFO     Started server process [12116]
+2022-04-16 17:22:30,342 INFO     Waiting for application startup.
+2022-04-16 17:22:30,344 INFO     Application startup complete.
+2022-04-16 17:22:50,192 INFO     Started server process [12188]
+2022-04-16 17:22:50,193 INFO     Waiting for application startup.
+2022-04-16 17:22:50,194 INFO     Application startup complete.
+2022-04-16 17:22:59,891 INFO     Started server process [8532]
+2022-04-16 17:22:59,894 INFO     Waiting for application startup.
+2022-04-16 17:22:59,895 INFO     Application startup complete.
+2022-05-06 21:34:15,392 INFO     Started server process [19104]
+2022-05-06 21:34:15,392 INFO     Waiting for application startup.
+2022-05-06 21:34:15,404 INFO     Application startup complete.
+2022-05-06 21:39:16,341 INFO     Started server process [26268]
+2022-05-06 21:39:16,341 INFO     Waiting for application startup.
+2022-05-06 21:39:16,341 INFO     Application startup complete.
+2022-05-06 21:40:10,738 INFO     Opened weight page
+2022-05-06 21:40:10,753 INFO     Opened height page
+2022-05-06 21:40:10,773 INFO     Opened head circumference page
+2022-05-06 21:40:10,792 INFO     Opened feeding page
+2022-05-06 21:40:13,891 INFO     Opened feeding page
+2022-05-06 21:40:37,732 INFO     Opened weight page
+2022-05-06 21:40:37,743 INFO     Opened height page
+2022-05-06 21:40:37,763 INFO     Opened head circumference page
+2022-05-06 21:40:37,782 INFO     Opened feeding page
+2022-05-06 21:40:39,742 INFO     Opened feeding page
+2022-05-06 21:40:59,455 INFO     Shutting down
+2022-05-06 21:40:59,562 INFO     Waiting for application shutdown.
+2022-05-06 21:40:59,562 INFO     Application shutdown complete.
+2022-05-06 21:40:59,564 INFO     Finished server process [26268]
+2022-05-06 21:41:50,539 INFO     Started server process [24024]
+2022-05-06 21:41:50,539 INFO     Waiting for application startup.
+2022-05-06 21:41:50,539 INFO     Application startup complete.
+2022-05-06 21:42:14,289 INFO     Opened weight page
+2022-05-06 21:42:14,303 INFO     Opened height page
+2022-05-06 21:42:14,325 INFO     Opened head circumference page
+2022-05-06 21:42:14,342 INFO     Opened feeding page
+2022-05-06 21:42:16,293 INFO     Opened feeding page
+2022-05-06 21:45:10,076 INFO     Shutting down
