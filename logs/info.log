@@ -370,3 +370,74 @@
 2022-05-06 21:42:14,342 INFO     Opened feeding page
 2022-05-06 21:42:16,293 INFO     Opened feeding page
 2022-05-06 21:45:10,076 INFO     Shutting down
+2022-05-19 06:45:36,047 INFO     Started server process [22380]
+2022-05-19 06:45:36,047 INFO     Waiting for application startup.
+2022-05-19 06:45:36,049 INFO     Application startup complete.
+2022-05-19 06:55:29,390 INFO     Reset function
+2022-05-19 07:04:20,690 INFO     Reset function
+2022-05-19 07:11:20,393 INFO     Opened weight page
+2022-05-19 07:11:20,421 INFO     Opened height page
+2022-05-19 07:11:20,443 INFO     Opened head circumference page
+2022-05-19 07:11:20,465 INFO     Opened feeding page
+2022-05-19 07:11:23,418 INFO     Opened weight page
+2022-05-19 07:11:23,447 INFO     Opened height page
+2022-05-19 07:11:23,474 INFO     Opened head circumference page
+2022-05-19 07:11:23,496 INFO     Opened feeding page
+2022-05-19 07:13:15,785 INFO     Opened weight page
+2022-05-19 07:13:15,812 INFO     Opened height page
+2022-05-19 07:13:15,834 INFO     Opened head circumference page
+2022-05-19 07:13:15,855 INFO     Opened feeding page
+2022-05-19 07:14:25,684 INFO     Shutting down
+2022-05-19 07:14:25,796 INFO     Waiting for application shutdown.
+2022-05-19 07:14:25,796 INFO     Application shutdown complete.
+2022-05-19 07:14:25,798 INFO     Finished server process [22380]
+2022-05-19 07:15:09,945 INFO     Started server process [9148]
+2022-05-19 07:15:09,945 INFO     Waiting for application startup.
+2022-05-19 07:15:09,945 INFO     Application startup complete.
+2022-05-19 07:16:22,789 INFO     Opened weight page
+2022-05-19 07:16:31,808 INFO     Opened weight page
+2022-05-19 07:16:31,833 INFO     Opened height page
+2022-05-19 07:16:31,853 INFO     Opened head circumference page
+2022-05-19 07:16:31,872 INFO     Opened feeding page
+2022-05-19 07:21:34,068 INFO     Opened head circumference page
+2022-05-19 07:23:43,058 INFO     Opened weight page
+2022-05-19 07:23:43,078 INFO     Opened height page
+2022-05-19 07:23:43,101 INFO     Opened head circumference page
+2022-05-19 07:23:43,122 INFO     Opened feeding page
+2022-05-19 07:27:19,896 INFO     Opened weight page
+2022-05-19 07:27:19,922 INFO     Opened height page
+2022-05-19 07:27:19,971 INFO     Opened head circumference page
+2022-05-19 07:27:19,988 INFO     Opened feeding page
+2022-05-19 07:27:21,843 INFO     Opened feeding page
+2022-05-19 07:28:03,794 INFO     Opened weight page
+2022-05-19 07:28:03,818 INFO     Opened height page
+2022-05-19 07:28:03,838 INFO     Opened head circumference page
+2022-05-19 07:28:03,859 INFO     Opened feeding page
+2022-05-19 07:28:05,729 INFO     Opened feeding page
+2022-05-19 07:28:50,217 INFO     Opened weight page
+2022-05-19 07:28:50,239 INFO     Opened height page
+2022-05-19 07:28:50,260 INFO     Opened head circumference page
+2022-05-19 07:28:50,284 INFO     Opened feeding page
+2022-05-19 07:28:52,116 INFO     Opened feeding page
+2022-05-19 07:29:04,560 INFO     Opened weight page
+2022-05-19 07:29:04,584 INFO     Opened height page
+2022-05-19 07:29:04,605 INFO     Opened head circumference page
+2022-05-19 07:29:04,626 INFO     Opened feeding page
+2022-05-19 07:29:06,495 INFO     Opened feeding page
+2022-05-19 07:29:16,704 INFO     Opened weight page
+2022-05-19 07:29:16,728 INFO     Opened height page
+2022-05-19 07:29:16,748 INFO     Opened head circumference page
+2022-05-19 07:29:16,770 INFO     Opened feeding page
+2022-05-19 07:29:18,626 INFO     Opened feeding page
+2022-05-19 10:37:04,870 INFO     Ran head update function
+2022-05-19 10:37:06,662 INFO     Opened weight page
+2022-05-19 10:37:06,684 INFO     Opened height page
+2022-05-19 10:37:06,707 INFO     Opened head circumference page
+2022-05-19 10:37:06,728 INFO     Opened feeding page
+2022-05-19 10:37:08,583 INFO     Opened feeding page
+2022-05-19 10:37:14,903 INFO     Reset function
+2022-05-19 10:37:16,889 INFO     Opened weight page
+2022-05-19 10:37:16,914 INFO     Opened height page
+2022-05-19 10:37:16,934 INFO     Opened head circumference page
+2022-05-19 10:37:16,956 INFO     Opened feeding page
+2022-05-19 10:37:18,854 INFO     Opened feeding page
